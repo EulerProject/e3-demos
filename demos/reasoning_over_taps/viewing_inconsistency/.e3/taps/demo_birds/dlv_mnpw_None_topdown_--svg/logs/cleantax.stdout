@@ -1,0 +1,26 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/demo_birds/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/demo_birds/dlv_mnpw_None_topdown_--svg -r dlv -e mnpw --repair=HST 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	6378909e7b4b
+Date:	2017-03-25-18:15:19
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+************************************
+Input is inconsistent
+
+Here lists MIS:
+************************************
+# 1 Min inconsistent subset : [ 2015.Neoaves equals 2014.Tinamiformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 2 Min inconsistent subset : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 3 Min inconsistent subset : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Palaeognathae is_included_in 2014.Paleognathae , 2015.Neoaves equals 2014.Tinamiformes ]
+************************************

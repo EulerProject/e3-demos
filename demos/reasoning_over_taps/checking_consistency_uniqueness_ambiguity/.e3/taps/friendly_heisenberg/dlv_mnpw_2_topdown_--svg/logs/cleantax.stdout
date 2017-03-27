@@ -1,0 +1,20 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/friendly_heisenberg/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/friendly_heisenberg/dlv_mnpw_2_topdown_--svg -r dlv -e mnpw -n 2 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	be44d2fb4632
+Date:	2017-03-22-19:27:44
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+
+Possible world 0:
+{1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites"><"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites_subsp_hyalites"<"1995.Amauris_damocles, 1997.Amauris_hyalites_subsp_makuyensis"<"1995.Amauris_damocles, 1997.Amauris_hyalites"<"1995.Amauris_damocles, 1997.Amauris_damocles"<"1995.Amauris_damocles, 1997.Amauris_hyalites_subsp_hyalites"<"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites">"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_makuyensis"="1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_damocles"="1995.Amauris_damocles_subsp_damocles}
+
+Possible world 1:
+{1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites_subsp_hyalites"<"1995.Amauris_damocles, 1997.Amauris_hyalites_subsp_makuyensis"<"1995.Amauris_damocles, 1997.Amauris_hyalites"<"1995.Amauris_damocles, 1997.Amauris_damocles"<"1995.Amauris_damocles, 1997.Amauris_hyalites">"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites">"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_hyalites"="1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites_subsp_makuyensis"="1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_damocles"="1995.Amauris_damocles_subsp_damocles}
+

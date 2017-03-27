@@ -1,0 +1,14 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/laughing_cray/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/laughing_cray/dlv_mnpw_None_topdown_--svg -r dlv -e mnpw --consistency 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	be44d2fb4632
+Date:	2017-03-22-19:27:21
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+Input is inconsistent

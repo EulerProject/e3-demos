@@ -1,0 +1,12 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/gallant_rosalind/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/gallant_rosalind/dlv_mnpw_None_topdown_--svg -r dlv -e mnpw --fourinone 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	6378909e7b4b
+Date:	2017-03-25-22:09:15
+
+
+##### Euler Outputs:

@@ -1,0 +1,6 @@
+taxonomy 1995 AckeryEtAl
+(Amauris_damocles Amauris_damocles_subsp_damocles Amauris_damocles_subsp_hyalites Amauris_damocles_subsp_makuyensis)
+
+taxonomy 1999 Bob
+
+articulation

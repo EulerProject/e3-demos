@@ -1,0 +1,49 @@
+2014.Aves:
+  concept: Aves
+  group: '2014'
+2014.Neognathae:
+  concept: Neognathae
+  group: '2014'
+2015.Aves:
+  concept: Aves
+  group: '2015'
+2015.Palaeognathae:
+  concept: Palaeognathae
+  group: '2015'
+comb.2015.Gall_Neoa_Clade\n2014.Paleognathae:
+  concept: 2015.Gall_Neoa_Clade\n2014.Paleognathae
+  group: comb
+comb.2015.Galloanserae\n2014.Struthioniformes:
+  concept: 2015.Galloanserae\n2014.Struthioniformes
+  group: comb
+comb.2015.Neoaves\n2014.Tinamiformes:
+  concept: 2015.Neoaves\n2014.Tinamiformes
+  group: comb
+2014.Neognathae_2014.Aves:
+  label: input
+  s: 2014.Neognathae
+  t: 2014.Aves
+2015.Aves_2014.Aves:
+  label: overlaps
+  s: 2015.Aves
+  t: 2014.Aves
+2015.Gall_Neoa_Clade\n2014.Paleognathae_2014.Aves:
+  label: input
+  s: 2015.Gall_Neoa_Clade\n2014.Paleognathae
+  t: 2014.Aves
+2015.Gall_Neoa_Clade\n2014.Paleognathae_2015.Aves:
+  label: input
+  s: 2015.Gall_Neoa_Clade\n2014.Paleognathae
+  t: 2015.Aves
+2015.Galloanserae\n2014.Struthioniformes_2015.Gall_Neoa_Clade\n2014.Paleognathae:
+  label: input
+  s: 2015.Galloanserae\n2014.Struthioniformes
+  t: 2015.Gall_Neoa_Clade\n2014.Paleognathae
+2015.Neoaves\n2014.Tinamiformes_2015.Gall_Neoa_Clade\n2014.Paleognathae:
+  label: input
+  s: 2015.Neoaves\n2014.Tinamiformes
+  t: 2015.Gall_Neoa_Clade\n2014.Paleognathae
+2015.Palaeognathae_2015.Aves:
+  label: input
+  s: 2015.Palaeognathae
+  t: 2015.Aves

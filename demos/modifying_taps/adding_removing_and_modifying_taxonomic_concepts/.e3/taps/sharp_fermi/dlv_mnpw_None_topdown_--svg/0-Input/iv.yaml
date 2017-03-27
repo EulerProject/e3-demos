@@ -1,0 +1,80 @@
+1995.Amauris_damocles:
+  concept: Amauris_damocles
+  group: '1995'
+1995.Amauris_damocles_subsp_damocles:
+  concept: Amauris_damocles_subsp_damocles
+  group: '1995'
+1995.Amauris_damocles_subsp_hyalites:
+  concept: Amauris_damocles_subsp_hyalites
+  group: '1995'
+1995.Amauris_damocles_subsp_makuyensis:
+  concept: Amauris_damocles_subsp_makuyensis
+  group: '1995'
+1997.Amauris_bar:
+  concept: Amauris_bar
+  group: '1997'
+1997.Amauris_damocles:
+  concept: Amauris_damocles
+  group: '1997'
+1997.Amauris_foo:
+  concept: Amauris_foo
+  group: '1997'
+1997.Amauris_hyalites:
+  concept: Amauris_hyalites
+  group: '1997'
+1997.Amauris_hyalites_subsp_hyalites:
+  concept: Amauris_hyalites_subsp_hyalites
+  group: '1997'
+1997.Amauris_hyalites_subsp_makuyensis:
+  concept: Amauris_hyalites_subsp_makuyensis
+  group: '1997'
+1997.FooBar:
+  concept: FooBar
+  group: '1997'
+1997.MyRoot:
+  concept: MyRoot
+  group: '1997'
+1995.Amauris_damocles_subsp_damocles_1995.Amauris_damocles:
+  label: isa
+  s: 1995.Amauris_damocles_subsp_damocles
+  t: 1995.Amauris_damocles
+1995.Amauris_damocles_subsp_hyalites_1995.Amauris_damocles:
+  label: isa
+  s: 1995.Amauris_damocles_subsp_hyalites
+  t: 1995.Amauris_damocles
+1995.Amauris_damocles_subsp_makuyensis_1995.Amauris_damocles:
+  label: isa
+  s: 1995.Amauris_damocles_subsp_makuyensis
+  t: 1995.Amauris_damocles
+1997.Amauris_bar_1997.Amauris_damocles:
+  label: isa
+  s: 1997.Amauris_bar
+  t: 1997.Amauris_damocles
+1997.Amauris_damocles_1995.Amauris_damocles_subsp_damocles:
+  label: ==
+  s: 1997.Amauris_damocles
+  t: 1995.Amauris_damocles_subsp_damocles
+1997.Amauris_foo_1997.Amauris_damocles:
+  label: isa
+  s: 1997.Amauris_foo
+  t: 1997.Amauris_damocles
+1997.Amauris_hyalites_subsp_hyalites_1995.Amauris_damocles_subsp_hyalites:
+  label: <
+  s: 1997.Amauris_hyalites_subsp_hyalites
+  t: 1995.Amauris_damocles_subsp_hyalites
+1997.Amauris_hyalites_subsp_hyalites_1997.Amauris_hyalites:
+  label: isa
+  s: 1997.Amauris_hyalites_subsp_hyalites
+  t: 1997.Amauris_hyalites
+1997.Amauris_hyalites_subsp_makuyensis_1995.Amauris_damocles_subsp_makuyensis:
+  label: ==
+  s: 1997.Amauris_hyalites_subsp_makuyensis
+  t: 1995.Amauris_damocles_subsp_makuyensis
+1997.Amauris_hyalites_subsp_makuyensis_1997.Amauris_hyalites:
+  label: isa
+  s: 1997.Amauris_hyalites_subsp_makuyensis
+  t: 1997.Amauris_hyalites
+1997.FooBar_1997.Amauris_damocles:
+  label: isa
+  s: 1997.FooBar
+  t: 1997.Amauris_damocles

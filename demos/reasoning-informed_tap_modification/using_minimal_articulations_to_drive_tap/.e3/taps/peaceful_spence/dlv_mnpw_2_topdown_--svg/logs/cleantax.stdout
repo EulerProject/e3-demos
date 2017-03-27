@@ -1,0 +1,36 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/peaceful_spence/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/peaceful_spence/dlv_mnpw_2_topdown_--svg -r dlv -e mnpw --artRem 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	44e617513564
+Date:	2017-03-25-23:53:27
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+************************************
+Unique possible world generated
+************************************
+# 1 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles_subsp_makuyensis equals 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles_subsp_hyalites includes 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles ]
+************************************
+************************************
+# 2 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles_subsp_hyalites includes 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_makuyensis is_included_in 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_makuyensis ]
+************************************
+************************************
+# 3 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles_subsp_makuyensis disjoint 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_makuyensis is_included_in 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites overlaps 1997.Amauris_hyalites , 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_makuyensis ]
+************************************
+************************************
+# 4 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles includes 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_makuyensis disjoint 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles_subsp_makuyensis is_included_in 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites overlaps 1997.Amauris_hyalites ]
+************************************
+************************************
+# 5 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles includes 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_hyalites includes 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_makuyensis is_included_in 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_hyalites_subsp_makuyensis ]
+************************************
+************************************
+# 6 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles_subsp_makuyensis equals 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites overlaps 1997.Amauris_hyalites ]
+************************************
+************************************
+# 7 Min articulation subset that makes unique PW : [ 1995.Amauris_damocles_subsp_makuyensis equals 1997.Amauris_hyalites_subsp_makuyensis , 1995.Amauris_damocles includes 1997.Amauris_hyalites , 1995.Amauris_damocles_subsp_damocles equals 1997.Amauris_damocles , 1995.Amauris_damocles_subsp_hyalites overlaps 1997.Amauris_hyalites ]
+************************************

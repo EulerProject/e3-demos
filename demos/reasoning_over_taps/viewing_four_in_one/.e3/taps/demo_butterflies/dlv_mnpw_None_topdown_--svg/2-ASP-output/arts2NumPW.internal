@@ -1,0 +1,1 @@
+arts2NumPW = {frozenset([1, 2]): 11, frozenset([0, 1, 2]): 1, frozenset([0, 2]): 17, frozenset([0]): 161, frozenset([0, 1]): 5}

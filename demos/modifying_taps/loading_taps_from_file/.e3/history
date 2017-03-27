@@ -1,0 +1,1 @@
+{"directed": true, "graph": {}, "nodes": [{"id": "c42918157cf3a57cd70803c52c5dd0ee6a7a037a"}, {"id": "10709a3bd1e0a0309db8f47251ea17d320f094a2"}], "links": [{"source": 1, "endTime": 1490308474.785754, "command": "load tap birds.txt", "target": 0, "startTime": 1490308474.722318}], "multigraph": false}

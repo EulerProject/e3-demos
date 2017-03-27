@@ -1,0 +1,17 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/demo_oaks/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/demo_oaks/dlv_mnpw_2_topdown_--svg -r dlv -e mnpw -n 2 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	6378909e7b4b
+Date:	2017-03-25-18:56:36
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+
+Possible world 0:
+{FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2}
+

@@ -1,0 +1,324 @@
+%%% Max Number of Euler Regions
+#maxint=15.
+
+%%% Euler Regions
+r(M):- #int(M),M>=1,M<=#maxint.
+
+%%% Concepts
+tax(t1995,0).
+concept2(A, B) :- concept(A,B,_).
+concept(c1995_Amauris_damocles_subsp_hyalites,0,0).
+concept2(c1995_Amauris_damocles,0).
+concept(c1995_Amauris_damocles_subsp_makuyensis,0,1).
+concept(c1995_Amauris_damocles_subsp_damocles,0,2).
+tax(t1997,1).
+concept2(A, B) :- concept(A,B,_).
+concept(c1997_Amauris_damocles,1,0).
+concept2(c1997_Amauris_hyalites,1).
+concept(c1997_Amauris_hyalites_subsp_makuyensis,1,1).
+concept(c1997_Amauris_hyalites_subsp_hyalites,1,2).
+
+%%% Euler Bit
+bit(M, 0, V):-r(M),M1=M/1, #mod(M1,4,V).
+bit(M, 1, V):-r(M),M1=M/4, #mod(M1,4,V).
+
+
+%%% Meaning of regions
+in(X, M) :- r(M),concept(X,T,N),N1=N+1,bit(M,T,N1).
+out(X, M) :- r(M),concept(X,T,N),N1=N+1,not bit(M,T,N1).
+in(X, M) :- r(M),concept2(X,_),not out(X, M).
+out(X, M) :- out3(X, M, _), ix.
+irs(M) :- in(X, M), out(X, M), r(M), concept2(X,_).
+
+%%% Constraints of regions.
+irs(X) :- ir(X, _).
+vrs(X) :- vr(X, _).
+vr(X, X) :- not irs(X), r(X).
+ir(X, X) :- not vrs(X), r(X), pw.
+ie(prod(A,B)) :- vr(X, A), ir(X, B), ix.
+:- vrs(X), irs(X), pw.
+
+%%% Inconsistency Explanation.
+ie(s(R, A, Y)) :- pie(R, A, Y), not cc(R, Y), ix.
+cc(R, Y) :- c(R, _, Y), ix.
+
+%%% Parent-Child relations
+%% ISA
+% c1995_Amauris_damocles_subsp_damocles isa c1995_Amauris_damocles
+ir(X, r3645) :- in(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles, X), pw.
+ir(X, prod(r3645,R)) :- in(c1995_Amauris_damocles_subsp_damocles,X), out3(c1995_Amauris_damocles, X, R), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), in(c1995_Amauris_damocles,X)} <= 0, pw.
+pie(r3645, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles, X), ix.
+c(r3645, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles, X), ix.
+
+% c1995_Amauris_damocles_subsp_hyalites isa c1995_Amauris_damocles
+ir(X, r3646) :- in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1995_Amauris_damocles, X), pw.
+ir(X, prod(r3646,R)) :- in(c1995_Amauris_damocles_subsp_hyalites,X), out3(c1995_Amauris_damocles, X, R), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), in(c1995_Amauris_damocles,X)} <= 0, pw.
+pie(r3646, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1995_Amauris_damocles, X), ix.
+c(r3646, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1995_Amauris_damocles, X), ix.
+
+% c1995_Amauris_damocles_subsp_makuyensis isa c1995_Amauris_damocles
+ir(X, r3647) :- in(c1995_Amauris_damocles_subsp_makuyensis, X), out(c1995_Amauris_damocles, X), pw.
+ir(X, prod(r3647,R)) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), out3(c1995_Amauris_damocles, X, R), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1995_Amauris_damocles,X)} <= 0, pw.
+pie(r3647, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1995_Amauris_damocles, X), ix.
+c(r3647, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1995_Amauris_damocles, X), ix.
+
+%% coverage
+out3(c1995_Amauris_damocles, X, r3648) :- out(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_hyalites, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+out(c1995_Amauris_damocles, X) :- out(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_hyalites, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), pw.
+%% sibling disjointness
+% c1995_Amauris_damocles_subsp_damocles ! c1995_Amauris_damocles_subsp_hyalites
+ir(X, r3649) :- in(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_hyalites, X).
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), out(c1995_Amauris_damocles_subsp_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_damocles,X), in(c1995_Amauris_damocles_subsp_hyalites,X)} <= 0, pw.
+pie(r3649, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_hyalites, X), ix.
+c(r3649, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_hyalites, X), ix.
+pie(r3649, A, 2) :- ir(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_hyalites, X), ix.
+c(r3649, A, 2) :- vr(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_hyalites, X), ix.
+
+% c1995_Amauris_damocles_subsp_damocles ! c1995_Amauris_damocles_subsp_makuyensis
+ir(X, r3650) :- in(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_makuyensis, X).
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), out(c1995_Amauris_damocles_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_damocles,X), in(c1995_Amauris_damocles_subsp_makuyensis,X)} <= 0, pw.
+pie(r3650, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+c(r3650, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+pie(r3650, A, 2) :- ir(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+c(r3650, A, 2) :- vr(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+
+% c1995_Amauris_damocles_subsp_hyalites ! c1995_Amauris_damocles_subsp_makuyensis
+ir(X, r3651) :- in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1995_Amauris_damocles_subsp_makuyensis, X).
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), out(c1995_Amauris_damocles_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_hyalites,X), in(c1995_Amauris_damocles_subsp_makuyensis,X)} <= 0, pw.
+pie(r3651, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+c(r3651, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+pie(r3651, A, 2) :- ir(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+c(r3651, A, 2) :- vr(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1995_Amauris_damocles_subsp_makuyensis, X), ix.
+
+%% ISA
+% c1997_Amauris_hyalites_subsp_hyalites isa c1997_Amauris_hyalites
+ir(X, r3652) :- in(c1997_Amauris_hyalites_subsp_hyalites, X), out(c1997_Amauris_hyalites, X), pw.
+ir(X, prod(r3652,R)) :- in(c1997_Amauris_hyalites_subsp_hyalites,X), out3(c1997_Amauris_hyalites, X, R), ix.
+:- #count {X : vrs(X), in(c1997_Amauris_hyalites_subsp_hyalites,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+pie(r3652, A, 1) :- ir(X, A), in(c1997_Amauris_hyalites_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3652, A, 1) :- vr(X, A), in(c1997_Amauris_hyalites_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+
+% c1997_Amauris_hyalites_subsp_makuyensis isa c1997_Amauris_hyalites
+ir(X, r3653) :- in(c1997_Amauris_hyalites_subsp_makuyensis, X), out(c1997_Amauris_hyalites, X), pw.
+ir(X, prod(r3653,R)) :- in(c1997_Amauris_hyalites_subsp_makuyensis,X), out3(c1997_Amauris_hyalites, X, R), ix.
+:- #count {X : vrs(X), in(c1997_Amauris_hyalites_subsp_makuyensis,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+pie(r3653, A, 1) :- ir(X, A), in(c1997_Amauris_hyalites_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3653, A, 1) :- vr(X, A), in(c1997_Amauris_hyalites_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+
+%% coverage
+out3(c1997_Amauris_hyalites, X, r3654) :- out(c1997_Amauris_hyalites_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+out(c1997_Amauris_hyalites, X) :- out(c1997_Amauris_hyalites_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), pw.
+%% sibling disjointness
+% c1997_Amauris_hyalites_subsp_hyalites ! c1997_Amauris_hyalites_subsp_makuyensis
+ir(X, r3655) :- in(c1997_Amauris_hyalites_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X).
+:- #count {X : vrs(X), in(c1997_Amauris_hyalites_subsp_hyalites,X), out(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1997_Amauris_hyalites_subsp_hyalites,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+pie(r3655, A, 1) :- ir(X, A), in(c1997_Amauris_hyalites_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3655, A, 1) :- vr(X, A), in(c1997_Amauris_hyalites_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+pie(r3655, A, 2) :- ir(X, A), out(c1997_Amauris_hyalites_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3655, A, 2) :- vr(X, A), out(c1997_Amauris_hyalites_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+
+%%% Articulations
+% 1995.Amauris_damocles includes 1997.Amauris_hyalites
+ir(X, r3656) :- out(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites,X), pw.
+ir(X, prod(r3656,R)) :- out3(c1995_Amauris_damocles, X, R), in(c1997_Amauris_hyalites,X), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), out(c1997_Amauris_hyalites,X)} <= 0, pw.
+pie(r3656, A, 1) :- ir(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites, X), ix.
+c(r3656, A, 1) :- vr(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites, X), ix.
+
+pie(r3656, A, 2) :- ir(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3656, A, 2) :- vr(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_damocles disjoint 1997.Amauris_hyalites
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), out(c1997_Amauris_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+pie(r3657, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3657, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites, X), ix.
+
+pie(r3657, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites, X), ix.
+c(r3657, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites, X), ix.
+
+ir(X, r3657) :- in(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites,X).
+
+% 1995.Amauris_damocles includes 1997.Amauris_damocles
+ir(X, r3658) :- out(c1995_Amauris_damocles,X), in(c1997_Amauris_damocles,X), pw.
+ir(X, prod(r3658,R)) :- out3(c1995_Amauris_damocles, X, R), in(c1997_Amauris_damocles,X), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), in(c1997_Amauris_damocles,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), out(c1997_Amauris_damocles,X)} <= 0, pw.
+pie(r3658, A, 1) :- ir(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_damocles, X), ix.
+c(r3658, A, 1) :- vr(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_damocles, X), ix.
+
+pie(r3658, A, 2) :- ir(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_damocles, X), ix.
+c(r3658, A, 2) :- vr(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_damocles, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_hyalites_subsp_makuyensis
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), out(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+pie(r3659, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3659, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+pie(r3659, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3659, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+ir(X, r3659) :- in(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X).
+
+% 1995.Amauris_damocles_subsp_hyalites disjoint 1997.Amauris_damocles
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), out(c1997_Amauris_damocles,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_damocles,X)} <= 0, pw.
+pie(r3660, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_damocles, X), ix.
+c(r3660, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_damocles, X), ix.
+
+pie(r3660, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_damocles, X), ix.
+c(r3660, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_damocles, X), ix.
+
+ir(X, r3660) :- in(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_damocles,X).
+
+% 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_hyalites
+ir(X, r3661) :- out(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites_subsp_hyalites,X), pw.
+ir(X, prod(r3661,R)) :- out3(c1995_Amauris_damocles, X, R), in(c1997_Amauris_hyalites_subsp_hyalites,X), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), out(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+pie(r3661, A, 1) :- ir(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3661, A, 1) :- vr(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+pie(r3661, A, 2) :- ir(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3661, A, 2) :- vr(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_hyalites overlaps 1997.Amauris_hyalites
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), out(c1997_Amauris_hyalites,X)} <= 0, pw.
+pie(r3662, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3662, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+
+pie(r3662, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites, X), ix.
+c(r3662, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites, X), ix.
+
+pie(r3662, A, 3) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3662, A, 3) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_makuyensis disjoint 1997.Amauris_damocles
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_makuyensis,X), out(c1997_Amauris_damocles,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_damocles,X)} <= 0, pw.
+pie(r3663, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_damocles, X), ix.
+c(r3663, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_damocles, X), ix.
+
+pie(r3663, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), out(c1997_Amauris_damocles, X), ix.
+c(r3663, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), out(c1997_Amauris_damocles, X), ix.
+
+ir(X, r3663) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_damocles,X).
+
+% 1995.Amauris_damocles_subsp_hyalites includes 1997.Amauris_hyalites_subsp_hyalites
+ir(X, r3664) :- out(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites_subsp_hyalites,X), pw.
+ir(X, prod(r3664,R)) :- out3(c1995_Amauris_damocles_subsp_hyalites, X, R), in(c1997_Amauris_hyalites_subsp_hyalites,X), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), in(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_hyalites,X), out(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+pie(r3664, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3664, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+pie(r3664, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3664, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_hyalites, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_makuyensis disjoint 1997.Amauris_hyalites_subsp_hyalites
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_makuyensis,X), out(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+pie(r3665, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3665, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+pie(r3665, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3665, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+ir(X, r3665) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites_subsp_hyalites,X).
+
+% 1995.Amauris_damocles_subsp_makuyensis equals 1997.Amauris_hyalites_subsp_makuyensis
+ir(X, r3666) :- out(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X).
+ir(X, r3666) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), out(c1997_Amauris_hyalites_subsp_makuyensis,X).
+ir(X, prod(r3666,R)) :- out3(c1995_Amauris_damocles_subsp_makuyensis, X, R), in(c1997_Amauris_hyalites_subsp_makuyensis,X), ix.
+ir(X, prod(r3666,R)) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), out3(c1997_Amauris_hyalites_subsp_makuyensis, X, R), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+pie(r3666, A, 1) :- ir(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3666, A, 1) :- vr(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+
+% 1995.Amauris_damocles includes 1997.Amauris_hyalites_subsp_makuyensis
+ir(X, r3667) :- out(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X), pw.
+ir(X, prod(r3667,R)) :- out3(c1995_Amauris_damocles, X, R), in(c1997_Amauris_hyalites_subsp_makuyensis,X), ix.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), in(c1995_Amauris_damocles,X), out(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+pie(r3667, A, 1) :- ir(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3667, A, 1) :- vr(X, A), in(c1995_Amauris_damocles, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+pie(r3667, A, 2) :- ir(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3667, A, 2) :- vr(X, A), in(c1995_Amauris_damocles, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_makuyensis is_included_in 1997.Amauris_hyalites
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_makuyensis,X), in(c1997_Amauris_hyalites,X)} <= 0, pw.
+ir(X, r3668) :- in(c1995_Amauris_damocles_subsp_makuyensis,X), out(c1997_Amauris_hyalites,X), pw.
+pie(r3668, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3668, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+
+pie(r3668, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+c(r3668, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_makuyensis, X), in(c1997_Amauris_hyalites, X), ix.
+
+
+% 1995.Amauris_damocles_subsp_damocles disjoint 1997.Amauris_hyalites_subsp_hyalites
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), out(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites_subsp_hyalites,X)} <= 0, pw.
+pie(r3669, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3669, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+pie(r3669, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+c(r3669, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites_subsp_hyalites, X), ix.
+
+ir(X, r3669) :- in(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites_subsp_hyalites,X).
+
+% 1995.Amauris_damocles_subsp_damocles disjoint 1997.Amauris_hyalites_subsp_makuyensis
+:- #count {X : vrs(X), in(c1995_Amauris_damocles_subsp_damocles,X), out(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X)} <= 0, pw.
+pie(r3670, A, 1) :- ir(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3670, A, 1) :- vr(X, A), out(c1995_Amauris_damocles_subsp_damocles, X), in(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+pie(r3670, A, 2) :- ir(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+c(r3670, A, 2) :- vr(X, A), in(c1995_Amauris_damocles_subsp_damocles, X), out(c1997_Amauris_hyalites_subsp_makuyensis, X), ix.
+
+ir(X, r3670) :- in(c1995_Amauris_damocles_subsp_damocles,X), in(c1997_Amauris_hyalites_subsp_makuyensis,X).
+
+%%% Decoding now
+:- rel(X, Y, "="), rel(X, Y, "<"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "><"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- not rel(X, Y, "="), not rel(X, Y, "<"), not rel(X, Y, ">"), not rel(X, Y, "><"), not rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), N1 < N2, not ncf(X), not ncf(Y), pw.
+
+rel(X, Y, "=") :- not hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "<") :- not hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, ">") :- hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "><") :- hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, "!") :- hint(X, Y, 0), not hint(X, Y, 1), hint(X, Y, 2), pw.
+
+
+hint(X, Y, 0) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), out(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 1) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 2) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), out(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+

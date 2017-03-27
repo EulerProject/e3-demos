@@ -1,0 +1,17 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/2_History/.e3/taps/demo_butterflies/cleantax -o /home/jovyan/work/2_History/.e3/taps/demo_butterflies/dlv_mnpw_None_topdown_--svg -r dlv -e mnpw 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	6918f4abb833
+Date:	2017-03-22-16:58:40
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+
+Possible world 0:
+{1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_makuyensis"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_hyalites_subsp_hyalites"!"1995.Amauris_damocles_subsp_damocles, 1997.Amauris_damocles"!"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites"><"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites_subsp_hyalites"<"1995.Amauris_damocles, 1997.Amauris_hyalites_subsp_makuyensis"<"1995.Amauris_damocles, 1997.Amauris_hyalites"<"1995.Amauris_damocles, 1997.Amauris_damocles"<"1995.Amauris_damocles, 1997.Amauris_hyalites_subsp_hyalites"<"1995.Amauris_damocles_subsp_hyalites, 1997.Amauris_hyalites">"1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_hyalites_subsp_makuyensis"="1995.Amauris_damocles_subsp_makuyensis, 1997.Amauris_damocles"="1995.Amauris_damocles_subsp_damocles}
+

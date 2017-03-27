@@ -1,0 +1,29 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/heuristic_jennings/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/heuristic_jennings/dlv_mnpw_11_topdown_--svg -r dlv -e mnpw -n 11 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	44bcea8619a5
+Date:	2017-03-24-16:51:18
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+
+Possible world 0:
+{2015.Neoaves"!"2014.Neognathae, 2015.Gall_Neoa_Clade"!"2014.Neognathae, 2015.Palaeognathae"!"2014.Struthioniformes, 2015.Palaeognathae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Paleognathae, 2015.Neoaves"!"2014.Struthioniformes, 2015.Galloanserae"!"2014.Neognathae, 2015.Galloanserae"!"2014.Tinamiformes, 2015.Aves"><"2014.Neognathae, 2015.Gall_Neoa_Clade">"2014.Struthioniformes, 2015.Gall_Neoa_Clade">"2014.Tinamiformes, 2015.Aves">"2014.Paleognathae, 2015.Aves">"2014.Tinamiformes, 2015.Aves">"2014.Struthioniformes, 2015.Gall_Neoa_Clade"<"2014.Aves, 2015.Palaeognathae"<"2014.Neognathae, 2015.Aves"<"2014.Aves, 2015.Neoaves"<"2014.Paleognathae, 2015.Galloanserae"<"2014.Aves, 2015.Galloanserae"<"2014.Paleognathae, 2015.Palaeognathae"<"2014.Aves, 2015.Neoaves"<"2014.Aves, 2015.Gall_Neoa_Clade"="2014.Paleognathae, 2015.Neoaves"="2014.Tinamiformes, 2015.Galloanserae"="2014.Struthioniformes}
+
+Possible world 1:
+{2015.Neoaves"!"2014.Neognathae, 2015.Gall_Neoa_Clade"!"2014.Neognathae, 2015.Palaeognathae"!"2014.Struthioniformes, 2015.Palaeognathae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Paleognathae, 2015.Neoaves"!"2014.Struthioniformes, 2015.Galloanserae"!"2014.Neognathae, 2015.Galloanserae"!"2014.Tinamiformes, 2015.Gall_Neoa_Clade">"2014.Struthioniformes, 2015.Gall_Neoa_Clade">"2014.Tinamiformes, 2015.Aves">"2014.Paleognathae, 2015.Aves">"2014.Neognathae, 2015.Aves">"2014.Tinamiformes, 2015.Aves">"2014.Struthioniformes, 2015.Gall_Neoa_Clade"<"2014.Aves, 2015.Neoaves"<"2014.Paleognathae, 2015.Galloanserae"<"2014.Aves, 2015.Galloanserae"<"2014.Paleognathae, 2015.Palaeognathae"<"2014.Aves, 2015.Neoaves"<"2014.Aves, 2015.Gall_Neoa_Clade"="2014.Paleognathae, 2015.Palaeognathae"="2014.Neognathae, 2015.Aves"="2014.Aves, 2015.Neoaves"="2014.Tinamiformes, 2015.Galloanserae"="2014.Struthioniformes}
+
+Possible world 2:
+{2015.Neoaves"!"2014.Neognathae, 2015.Gall_Neoa_Clade"!"2014.Neognathae, 2015.Palaeognathae"!"2014.Struthioniformes, 2015.Palaeognathae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Paleognathae, 2015.Neoaves"!"2014.Struthioniformes, 2015.Galloanserae"!"2014.Neognathae, 2015.Galloanserae"!"2014.Tinamiformes, 2015.Palaeognathae"><"2014.Neognathae, 2015.Aves"><"2014.Neognathae, 2015.Aves"><"2014.Aves, 2015.Palaeognathae"><"2014.Aves, 2015.Gall_Neoa_Clade">"2014.Struthioniformes, 2015.Gall_Neoa_Clade">"2014.Tinamiformes, 2015.Aves">"2014.Paleognathae, 2015.Aves">"2014.Tinamiformes, 2015.Aves">"2014.Struthioniformes, 2015.Gall_Neoa_Clade"<"2014.Aves, 2015.Neoaves"<"2014.Paleognathae, 2015.Galloanserae"<"2014.Aves, 2015.Galloanserae"<"2014.Paleognathae, 2015.Neoaves"<"2014.Aves, 2015.Gall_Neoa_Clade"="2014.Paleognathae, 2015.Neoaves"="2014.Tinamiformes, 2015.Galloanserae"="2014.Struthioniformes}
+
+Possible world 3:
+{2015.Neoaves"!"2014.Neognathae, 2015.Gall_Neoa_Clade"!"2014.Neognathae, 2015.Palaeognathae"!"2014.Struthioniformes, 2015.Palaeognathae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Paleognathae, 2015.Neoaves"!"2014.Struthioniformes, 2015.Galloanserae"!"2014.Neognathae, 2015.Galloanserae"!"2014.Tinamiformes, 2015.Palaeognathae"><"2014.Aves, 2015.Gall_Neoa_Clade">"2014.Struthioniformes, 2015.Gall_Neoa_Clade">"2014.Tinamiformes, 2015.Palaeognathae">"2014.Neognathae, 2015.Aves">"2014.Paleognathae, 2015.Aves">"2014.Neognathae, 2015.Aves">"2014.Aves, 2015.Aves">"2014.Tinamiformes, 2015.Aves">"2014.Struthioniformes, 2015.Gall_Neoa_Clade"<"2014.Aves, 2015.Neoaves"<"2014.Paleognathae, 2015.Galloanserae"<"2014.Aves, 2015.Galloanserae"<"2014.Paleognathae, 2015.Neoaves"<"2014.Aves, 2015.Gall_Neoa_Clade"="2014.Paleognathae, 2015.Neoaves"="2014.Tinamiformes, 2015.Galloanserae"="2014.Struthioniformes}
+
+Possible world 4:
+{2015.Neoaves"!"2014.Neognathae, 2015.Gall_Neoa_Clade"!"2014.Neognathae, 2015.Palaeognathae"!"2014.Struthioniformes, 2015.Palaeognathae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Paleognathae, 2015.Palaeognathae"!"2014.Neognathae, 2015.Aves"!"2014.Neognathae, 2015.Neoaves"!"2014.Struthioniformes, 2015.Galloanserae"!"2014.Neognathae, 2015.Galloanserae"!"2014.Tinamiformes, 2015.Palaeognathae"!"2014.Aves, 2015.Aves"><"2014.Aves, 2015.Gall_Neoa_Clade">"2014.Struthioniformes, 2015.Gall_Neoa_Clade">"2014.Tinamiformes, 2015.Aves">"2014.Paleognathae, 2015.Aves">"2014.Tinamiformes, 2015.Aves">"2014.Struthioniformes, 2015.Gall_Neoa_Clade"<"2014.Aves, 2015.Neoaves"<"2014.Paleognathae, 2015.Galloanserae"<"2014.Aves, 2015.Galloanserae"<"2014.Paleognathae, 2015.Neoaves"<"2014.Aves, 2015.Gall_Neoa_Clade"="2014.Paleognathae, 2015.Neoaves"="2014.Tinamiformes, 2015.Galloanserae"="2014.Struthioniformes}
+

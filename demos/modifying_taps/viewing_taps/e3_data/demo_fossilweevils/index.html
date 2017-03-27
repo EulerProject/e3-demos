@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title id="title">
+Tap: demo_fossilweevils
+  </title>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script charset="utf-8" src="https://d3js.org/d3.v3.min.js">
+  </script>
+  <script id="dataAdjacency" type="text/json">
+   {"directed": true, "graph": {}, "nodes": [{"group": "1999", "id": "1999.Diaprepes_esuriens"}, {"group": "1999", "id": "1999.Diaprepes_famelicus"}, {"group": "1982", "id": "1982.Diaprepes_excavatus"}, {"group": "2012", "id": "2012.Diaprepes_marginicollis"}, {"group": "2012", "id": "2012.Diaprepes_comma"}, {"group": "1999", "id": "1999.Diaprepes_marginatus"}, {"group": "1999", "id": "1999.Diaprepes_rohrii"}, {"group": "2001", "id": "2001.Diaprepes_comma"}, {"group": "1999", "id": "1999.Diaprepes_albofasciatus"}, {"group": "1999", "id": "1999.Diaprepes_excavatus"}, {"group": "1982", "id": "1982.Diaprepes_maugei"}, {"group": "1982", "id": "1982.Diaprepes"}, {"group": "2012", "id": "2012.Diaprepes_doublierii"}, {"group": "1999", "id": "1999.Diaprepes_variegatus"}, {"group": "1982", "id": "1982.Diaprepes_albofasciatus"}, {"group": "2012", "id": "2012.nc_Diaprepes"}, {"group": "2001", "id": "2001.Diaprepes_revestitus"}, {"group": "1999", "id": "1999.Diaprepes_reticulatus"}, {"group": "2001", "id": "2001.Diaprepes_famelicus"}, {"group": "1982", "id": "1982.Diaprepes_rufescens"}, {"group": "2001", "id": "2001.Diaprepes_sommeri"}, {"group": "2001", "id": "2001.Diaprepes_glaucus"}, {"group": "1982", "id": "1982.Diaprepes_rohrii"}, {"group": "1999", "id": "1999.Diaprepes_barbadensis"}, {"group": "2012", "id": "2012.Diaprepes_maugei"}, {"group": "2001", "id": "2001.Diaprepes_rohrii"}, {"group": "2012", "id": "2012.Diaprepes_abbreviatus"}, {"group": "1999", "id": "1999.Diaprepes_doublierii"}, {"group": "1982", "id": "1982.Diaprepes_balloui"}, {"group": "2001", "id": "2001.Diaprepes_reticulatus"}, {"group": "1999", "id": "1999.Diaprepes_sommeri"}, {"group": "2016", "id": "2016.nc_Diaprepes"}, {"group": "1999", "id": "1999.Diaprepes_glaucus"}, {"group": "2001", "id": "2001.Diaprepes_rufescens"}, {"group": "2001", "id": "2001.Diaprepes_boxi"}, {"group": "1982", "id": "1982.Diaprepes_spengleri"}, {"group": "2012", "id": "2012.Diaprepes_rohrii"}, {"group": "1982", "id": "1982.Diaprepes_viridans"}, {"group": "1982", "id": "1982.Diaprepes_abbreviatus"}, {"group": "2001", "id": "2001.Diaprepes_variegatus"}, {"group": "1999", "id": "1999.Diaprepes_revestitus"}, {"group": "1982", "id": "1982.Diaprepes_revestitus"}, {"group": "2016", "id": "2016.Diaprepes"}, {"group": "1999", "id": "1999.Diaprepes_rufescens"}, {"group": "1982", "id": "1982.Diaprepes_pulverulentus"}, {"group": "1999", "id": "1999.Diaprepes_elegantulus"}, {"group": "2001", "id": "2001.Diaprepes"}, {"group": "2001", "id": "2001.Diaprepes_balloui"}, {"group": "2012", "id": "2012.Diaprepes_balloui"}, {"group": "1982", "id": "1982.Diaprepes_marginatus"}, {"group": "1982", "id": "1982.Diaprepes_doublierii"}, {"group": "1982", "id": "1982.Diaprepes_famelicus"}, {"group": "1982", "id": "1982.Diaprepes_sommeri"}, {"group": "1999", "id": "1999.Diaprepes_boxi"}, {"group": "1999", "id": "1999.Diaprepes_maugei"}, {"group": "1982", "id": "1982.Diaprepes_variegatus"}, {"group": "1999", "id": "1999.Diaprepes_spengleri"}, {"group": "1999", "id": "1999.Diaprepes"}, {"group": "1999", "id": "1999.Diaprepes_abbreviatus"}, {"group": "2001", "id": "2001.Diaprepes_excavatus"}, {"group": "2012", "id": "2012.Diaprepes_famelicus"}, {"group": "2016", "id": "2016.Diaprepes_anticus"}, {"group": "1982", "id": "1982.Diaprepes_glaucus"}, {"group": "1982", "id": "1982.Diaprepes_reticulatus"}, {"group": "1999", "id": "1999.Diaprepes_pulverulentus"}, {"group": "2001", "id": "2001.Diaprepes_marginatus"}, {"group": "1999", "id": "1999.Diaprepes_balloui"}, {"group": "2001", "id": "2001.Diaprepes_maugei"}, {"group": "2012", "id": "2012.Diaprepes"}, {"group": "2001", "id": "2001.Diaprepes_abbreviatus"}, {"group": "2001", "id": "2001.Diaprepes_doublierii"}, {"group": "1999", "id": "1999.Diaprepes_comma"}, {"group": "1982", "id": "1982.Diaprepes_boxi"}], "links": [{"source": 0, "relation": "is_included_in", "target": 18, "key": 0}, {"source": 0, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 0, "relation": "is_included_in", "target": 51, "key": 0}, {"source": 1, "relation": "is_included_in", "target": 18, "key": 0}, {"source": 1, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 1, "relation": "is_included_in", "target": 51, "key": 0}, {"source": 2, "relation": "equals", "target": 9, "key": 0}, {"source": 2, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 3, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 3, "relation": "disjoint", "target": 57, "key": 0}, {"source": 3, "relation": "disjoint", "target": 11, "key": 0}, {"source": 4, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 4, "relation": "equals", "target": 7, "key": 0}, {"source": 5, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 5, "relation": "equals", "target": 49, "key": 0}, {"source": 5, "relation": "equals", "target": 65, "key": 0}, {"source": 6, "relation": "equals", "target": 22, "key": 0}, {"source": 6, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 6, "relation": "equals", "target": 25, "key": 0}, {"source": 7, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 7, "relation": "equals", "target": 71, "key": 0}, {"source": 7, "relation": "equals", "target": 4, "key": 0}, {"source": 8, "relation": "disjoint", "target": 68, "key": 0}, {"source": 8, "relation": "disjoint", "target": 46, "key": 0}, {"source": 8, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 8, "relation": "disjoint", "target": 42, "key": 0}, {"source": 8, "relation": "equals", "target": 14, "key": 0}, {"source": 9, "relation": "equals", "target": 2, "key": 0}, {"source": 9, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 9, "relation": "equals", "target": 59, "key": 0}, {"source": 10, "relation": "equals", "target": 54, "key": 0}, {"source": 10, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 52, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 72, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 44, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 35, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 28, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 41, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 38, "key": 0}, {"source": 11, "relation": "disjoint", "target": 61, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 22, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 62, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 63, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 49, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 50, "key": 0}, {"source": 11, "relation": "disjoint", "target": 3, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 51, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 2, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 10, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 19, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 37, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 14, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.1982", "target": 55, "key": 0}, {"source": 12, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 12, "relation": "equals", "target": 70, "key": 0}, {"source": 13, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 13, "relation": "equals", "target": 55, "key": 0}, {"source": 13, "relation": "equals", "target": 39, "key": 0}, {"source": 14, "relation": "equals", "target": 8, "key": 0}, {"source": 14, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 15, "relation": "includes", "target": 16, "key": 0}, {"source": 15, "relation": "includes", "target": 59, "key": 0}, {"source": 15, "relation": "is_included_in", "target": 46, "key": 0}, {"source": 15, "relation": "includes", "target": 29, "key": 0}, {"source": 15, "relation": "includes", "target": 39, "key": 0}, {"source": 15, "relation": "includes", "target": 65, "key": 0}, {"source": 15, "relation": "includes", "target": 34, "key": 0}, {"source": 15, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 15, "relation": "includes", "target": 20, "key": 0}, {"source": 15, "relation": "includes", "target": 33, "key": 0}, {"source": 15, "relation": "includes", "target": 21, "key": 0}, {"source": 16, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 16, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 16, "relation": "equals", "target": 40, "key": 0}, {"source": 17, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 17, "relation": "equals", "target": 29, "key": 0}, {"source": 17, "relation": "equals", "target": 63, "key": 0}, {"source": 18, "relation": "includes", "target": 0, "key": 0}, {"source": 18, "relation": "includes", "target": 23, "key": 0}, {"source": 18, "relation": "includes", "target": 1, "key": 0}, {"source": 18, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 18, "relation": "includes", "target": 45, "key": 0}, {"source": 18, "relation": "equals", "target": 60, "key": 0}, {"source": 19, "relation": "equals", "target": 43, "key": 0}, {"source": 19, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 20, "relation": "equals", "target": 30, "key": 0}, {"source": 20, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 20, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 21, "relation": "equals", "target": 32, "key": 0}, {"source": 21, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 21, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 22, "relation": "equals", "target": 6, "key": 0}, {"source": 22, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 23, "relation": "is_included_in", "target": 18, "key": 0}, {"source": 23, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 23, "relation": "is_included_in", "target": 51, "key": 0}, {"source": 24, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 24, "relation": "equals", "target": 67, "key": 0}, {"source": 25, "relation": "equals", "target": 36, "key": 0}, {"source": 25, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 25, "relation": "equals", "target": 6, "key": 0}, {"source": 26, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 26, "relation": "equals", "target": 69, "key": 0}, {"source": 27, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 27, "relation": "equals", "target": 70, "key": 0}, {"source": 27, "relation": "is_included_in", "target": 50, "key": 0}, {"source": 28, "relation": "equals", "target": 66, "key": 0}, {"source": 28, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 29, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 29, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 29, "relation": "equals", "target": 17, "key": 0}, {"source": 30, "relation": "equals", "target": 52, "key": 0}, {"source": 30, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 30, "relation": "equals", "target": 20, "key": 0}, {"source": 31, "relation": "equals", "target": 68, "key": 0}, {"source": 31, "relation": "taxonomy_incoming.2016", "target": 42, "key": 0}, {"source": 32, "relation": "equals", "target": 62, "key": 0}, {"source": 32, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 32, "relation": "equals", "target": 21, "key": 0}, {"source": 33, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 33, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 33, "relation": "equals", "target": 43, "key": 0}, {"source": 34, "relation": "equals", "target": 53, "key": 0}, {"source": 34, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 34, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 35, "relation": "equals", "target": 56, "key": 0}, {"source": 35, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 36, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 36, "relation": "equals", "target": 25, "key": 0}, {"source": 37, "relation": "disjoint", "target": 68, "key": 0}, {"source": 37, "relation": "disjoint", "target": 42, "key": 0}, {"source": 37, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 38, "relation": "equals", "target": 58, "key": 0}, {"source": 38, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 39, "relation": "equals", "target": 13, "key": 0}, {"source": 39, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 39, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 40, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 40, "relation": "equals", "target": 41, "key": 0}, {"source": 40, "relation": "equals", "target": 16, "key": 0}, {"source": 41, "relation": "equals", "target": 40, "key": 0}, {"source": 41, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.2016", "target": 31, "key": 0}, {"source": 42, "relation": "disjoint", "target": 37, "key": 0}, {"source": 42, "relation": "disjoint", "target": 64, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.2016", "target": 61, "key": 0}, {"source": 42, "relation": "disjoint", "target": 8, "key": 0}, {"source": 43, "relation": "equals", "target": 19, "key": 0}, {"source": 43, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 43, "relation": "equals", "target": 33, "key": 0}, {"source": 44, "relation": "equals", "target": 64, "key": 0}, {"source": 44, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 45, "relation": "is_included_in", "target": 18, "key": 0}, {"source": 45, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 45, "relation": "is_included_in", "target": 51, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 20, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 16, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 59, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 7, "key": 0}, {"source": 46, "relation": "disjoint", "target": 8, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 29, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 47, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 65, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 18, "key": 0}, {"source": 46, "relation": "is_included_in", "target": 57, "key": 0}, {"source": 46, "relation": "includes", "target": 15, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 33, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 34, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 69, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 67, "key": 0}, {"source": 46, "relation": "disjoint", "target": 64, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 25, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 39, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 70, "key": 0}, {"source": 46, "relation": "taxonomy_outgoing.2001", "target": 21, "key": 0}, {"source": 47, "relation": "equals", "target": 48, "key": 0}, {"source": 47, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 47, "relation": "equals", "target": 66, "key": 0}, {"source": 48, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 48, "relation": "equals", "target": 47, "key": 0}, {"source": 49, "relation": "equals", "target": 5, "key": 0}, {"source": 49, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 50, "relation": "includes", "target": 27, "key": 0}, {"source": 50, "relation": "is_included_in", "target": 57, "key": 0}, {"source": 50, "relation": "includes", "target": 71, "key": 0}, {"source": 50, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 51, "relation": "includes", "target": 0, "key": 0}, {"source": 51, "relation": "includes", "target": 23, "key": 0}, {"source": 51, "relation": "includes", "target": 1, "key": 0}, {"source": 51, "relation": "includes", "target": 45, "key": 0}, {"source": 51, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 51, "relation": "is_included_in", "target": 57, "key": 0}, {"source": 52, "relation": "equals", "target": 30, "key": 0}, {"source": 52, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 53, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 53, "relation": "equals", "target": 34, "key": 0}, {"source": 53, "relation": "equals", "target": 72, "key": 0}, {"source": 54, "relation": "equals", "target": 67, "key": 0}, {"source": 54, "relation": "equals", "target": 10, "key": 0}, {"source": 54, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 55, "relation": "equals", "target": 13, "key": 0}, {"source": 55, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 56, "relation": "equals", "target": 35, "key": 0}, {"source": 56, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 56, "relation": "is_included_in", "target": 69, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 0, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 1, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 5, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 17, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 9, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 13, "key": 0}, {"source": 57, "relation": "disjoint", "target": 3, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 8, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 23, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 56, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 40, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 27, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 30, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 32, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 43, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 45, "key": 0}, {"source": 57, "relation": "includes", "target": 46, "key": 0}, {"source": 57, "relation": "includes", "target": 50, "key": 0}, {"source": 57, "relation": "includes", "target": 51, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 53, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 54, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 6, "key": 0}, {"source": 57, "relation": "disjoint", "target": 61, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 64, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 66, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 58, "key": 0}, {"source": 57, "relation": "taxonomy_outgoing.1999", "target": 71, "key": 0}, {"source": 58, "relation": "equals", "target": 38, "key": 0}, {"source": 58, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 58, "relation": "is_included_in", "target": 69, "key": 0}, {"source": 59, "relation": "equals", "target": 9, "key": 0}, {"source": 59, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 59, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 60, "relation": "taxonomy_incoming.2012", "target": 68, "key": 0}, {"source": 60, "relation": "equals", "target": 18, "key": 0}, {"source": 61, "relation": "disjoint", "target": 57, "key": 0}, {"source": 61, "relation": "taxonomy_incoming.2016", "target": 42, "key": 0}, {"source": 61, "relation": "disjoint", "target": 11, "key": 0}, {"source": 62, "relation": "equals", "target": 32, "key": 0}, {"source": 62, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 63, "relation": "equals", "target": 17, "key": 0}, {"source": 63, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}, {"source": 64, "relation": "disjoint", "target": 68, "key": 0}, {"source": 64, "relation": "disjoint", "target": 46, "key": 0}, {"source": 64, "relation": "equals", "target": 44, "key": 0}, {"source": 64, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 64, "relation": "disjoint", "target": 42, "key": 0}, {"source": 65, "relation": "equals", "target": 5, "key": 0}, {"source": 65, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 65, "relation": "is_included_in", "target": 15, "key": 0}, {"source": 66, "relation": "equals", "target": 28, "key": 0}, {"source": 66, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 66, "relation": "equals", "target": 47, "key": 0}, {"source": 67, "relation": "equals", "target": 24, "key": 0}, {"source": 67, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 67, "relation": "equals", "target": 54, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 24, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 4, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 26, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 60, "key": 0}, {"source": 68, "relation": "equals", "target": 31, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 48, "key": 0}, {"source": 68, "relation": "disjoint", "target": 64, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 15, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 3, "key": 0}, {"source": 68, "relation": "disjoint", "target": 8, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 12, "key": 0}, {"source": 68, "relation": "taxonomy_outgoing.2012", "target": 36, "key": 0}, {"source": 68, "relation": "disjoint", "target": 37, "key": 0}, {"source": 69, "relation": "includes", "target": 58, "key": 0}, {"source": 69, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 69, "relation": "includes", "target": 56, "key": 0}, {"source": 69, "relation": "equals", "target": 26, "key": 0}, {"source": 70, "relation": "equals", "target": 12, "key": 0}, {"source": 70, "relation": "equals", "target": 27, "key": 0}, {"source": 70, "relation": "taxonomy_incoming.2001", "target": 46, "key": 0}, {"source": 71, "relation": "equals", "target": 7, "key": 0}, {"source": 71, "relation": "taxonomy_incoming.1999", "target": 57, "key": 0}, {"source": 71, "relation": "is_included_in", "target": 50, "key": 0}, {"source": 72, "relation": "equals", "target": 53, "key": 0}, {"source": 72, "relation": "taxonomy_incoming.1982", "target": 11, "key": 0}], "multigraph": true}
+  </script>
+  <script id="dataAdjacency1x1" type="text/json">
+   null
+  </script>
+  <style type="text/css">
+   .container {
+	width: initial;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+div#visualization button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#visualization button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#visualization button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+
+
+div#adjacency1x1 text.activeLegend {
+  fill: khaki;
+  font-weight: bold;
+}
+div#adjacency1x1 text.activeTick {
+   fill: khaki;
+   font-weight: bold;
+}
+div#adjacency1x1 button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#adjacency1x1 button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#adjacency1x1 button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+
+
+div#adjacency text.activeLegend {
+  fill: khaki;
+  font-weight: bold;
+}
+div#adjacency text.activeTick {
+   fill: khaki;
+   font-weight: bold;
+}
+div#adjacency button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#adjacency button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#adjacency button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <ul class="nav nav-tabs">
+    <li class="active">
+     <a data-toggle="tab" href="#cleantax">
+      Cleantax
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#visualization">
+      Visualization
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#adjacency1x1">
+      Adjacency 1x1
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#adjacency">
+      Adjacency
+     </a>
+    </li>
+   </ul>
+   <div class="tab-content">
+    <div class="tab-pane fade in active" id="cleantax">
+     <textarea cols="150" disabled="" id="cleantax-textarea" rows="30">taxonomy 2016 FranzZhang
+(Diaprepes Diaprepes_anticus nc_Diaprepes)
+
+taxonomy 2012 Franz
+(Diaprepes Diaprepes_abbreviatus Diaprepes_balloui Diaprepes_comma Diaprepes_doublierii Diaprepes_famelicus Diaprepes_marginicollis Diaprepes_maugei Diaprepes_rohrii nc_Diaprepes)
+
+taxonomy 2001 OBrienKovarik
+(Diaprepes Diaprepes_abbreviatus Diaprepes_balloui Diaprepes_boxi Diaprepes_comma Diaprepes_doublierii Diaprepes_excavatus Diaprepes_famelicus Diaprepes_glaucus Diaprepes_marginatus Diaprepes_maugei Diaprepes_reticulatus Diaprepes_revestitus Diaprepes_rohrii Diaprepes_rufescens Diaprepes_sommeri Diaprepes_variegatus)
+
+taxonomy 1999 Morrone
+(Diaprepes Diaprepes_abbreviatus Diaprepes_albofasciatus Diaprepes_balloui Diaprepes_barbadensis Diaprepes_boxi Diaprepes_comma Diaprepes_doublierii Diaprepes_elegantulus Diaprepes_esuriens Diaprepes_excavatus Diaprepes_famelicus Diaprepes_glaucus Diaprepes_marginatus Diaprepes_maugei Diaprepes_pulverulentus Diaprepes_reticulatus Diaprepes_revestitus Diaprepes_rohrii Diaprepes_rufescens Diaprepes_sommeri Diaprepes_spengleri Diaprepes_variegatus)
+
+taxonomy 1982 OBrienWibmer
+(Diaprepes Diaprepes_abbreviatus Diaprepes_albofasciatus Diaprepes_balloui Diaprepes_boxi Diaprepes_doublierii Diaprepes_excavatus Diaprepes_famelicus Diaprepes_glaucus Diaprepes_marginatus Diaprepes_maugei Diaprepes_pulverulentus Diaprepes_reticulatus Diaprepes_revestitus Diaprepes_rohrii Diaprepes_rufescens Diaprepes_sommeri Diaprepes_spengleri Diaprepes_variegatus Diaprepes_viridans)
+
+articulation
+[2001.Diaprepes disjoint 1999.Diaprepes_albofasciatus]
+[2001.Diaprepes disjoint 1999.Diaprepes_pulverulentus]
+[2012.Diaprepes disjoint 1982.Diaprepes_viridans]
+[2012.Diaprepes disjoint 1999.Diaprepes_albofasciatus]
+[2012.Diaprepes disjoint 1999.Diaprepes_pulverulentus]
+[2012.Diaprepes_marginicollis disjoint 1982.Diaprepes]
+[2012.Diaprepes_marginicollis disjoint 1999.Diaprepes]
+[2016.Diaprepes disjoint 1982.Diaprepes_viridans]
+[2016.Diaprepes disjoint 1999.Diaprepes_albofasciatus]
+[2016.Diaprepes disjoint 1999.Diaprepes_pulverulentus]
+[2016.Diaprepes_anticus disjoint 1982.Diaprepes]
+[2016.Diaprepes_anticus disjoint 1999.Diaprepes]
+[1999.Diaprepes_abbreviatus equals 1982.Diaprepes_abbreviatus]
+[1999.Diaprepes_albofasciatus equals 1982.Diaprepes_albofasciatus]
+[1999.Diaprepes_balloui equals 1982.Diaprepes_balloui]
+[1999.Diaprepes_boxi equals 1982.Diaprepes_boxi]
+[1999.Diaprepes_excavatus equals 1982.Diaprepes_excavatus]
+[1999.Diaprepes_glaucus equals 1982.Diaprepes_glaucus]
+[1999.Diaprepes_marginatus equals 1982.Diaprepes_marginatus]
+[1999.Diaprepes_maugei equals 1982.Diaprepes_maugei]
+[1999.Diaprepes_pulverulentus equals 1982.Diaprepes_pulverulentus]
+[1999.Diaprepes_reticulatus equals 1982.Diaprepes_reticulatus]
+[1999.Diaprepes_revestitus equals 1982.Diaprepes_revestitus]
+[1999.Diaprepes_rohrii equals 1982.Diaprepes_rohrii]
+[1999.Diaprepes_rufescens equals 1982.Diaprepes_rufescens]
+[1999.Diaprepes_sommeri equals 1982.Diaprepes_sommeri]
+[1999.Diaprepes_spengleri equals 1982.Diaprepes_spengleri]
+[1999.Diaprepes_variegatus equals 1982.Diaprepes_variegatus]
+[2001.Diaprepes_balloui equals 1999.Diaprepes_balloui]
+[2001.Diaprepes_boxi equals 1999.Diaprepes_boxi]
+[2001.Diaprepes_comma equals 1999.Diaprepes_comma]
+[2001.Diaprepes_doublierii equals 1999.Diaprepes_doublierii]
+[2001.Diaprepes_excavatus equals 1999.Diaprepes_excavatus]
+[2001.Diaprepes_glaucus equals 1999.Diaprepes_glaucus]
+[2001.Diaprepes_marginatus equals 1999.Diaprepes_marginatus]
+[2001.Diaprepes_maugei equals 1999.Diaprepes_maugei]
+[2001.Diaprepes_reticulatus equals 1999.Diaprepes_reticulatus]
+[2001.Diaprepes_revestitus equals 1999.Diaprepes_revestitus]
+[2001.Diaprepes_rohrii equals 1999.Diaprepes_rohrii]
+[2001.Diaprepes_rufescens equals 1999.Diaprepes_rufescens]
+[2001.Diaprepes_sommeri equals 1999.Diaprepes_sommeri]
+[2001.Diaprepes_variegatus equals 1999.Diaprepes_variegatus]
+[2012.Diaprepes_abbreviatus equals 2001.Diaprepes_abbreviatus]
+[2012.Diaprepes_balloui equals 2001.Diaprepes_balloui]
+[2012.Diaprepes_comma equals 2001.Diaprepes_comma]
+[2012.Diaprepes_doublierii equals 2001.Diaprepes_doublierii]
+[2012.Diaprepes_famelicus equals 2001.Diaprepes_famelicus]
+[2012.Diaprepes_maugei equals 2001.Diaprepes_maugei]
+[2012.Diaprepes_rohrii equals 2001.Diaprepes_rohrii]
+[2016.nc_Diaprepes equals 2012.Diaprepes]
+[1999.Diaprepes includes 1982.Diaprepes_doublierii]
+[1999.Diaprepes includes 1982.Diaprepes_famelicus]
+[2001.Diaprepes_abbreviatus includes 1999.Diaprepes_abbreviatus]
+[2001.Diaprepes_abbreviatus includes 1999.Diaprepes_spengleri]
+[2001.Diaprepes_famelicus includes 1999.Diaprepes_barbadensis]
+[2001.Diaprepes_famelicus includes 1999.Diaprepes_elegantulus]
+[2001.Diaprepes_famelicus includes 1999.Diaprepes_esuriens]
+[2001.Diaprepes_famelicus includes 1999.Diaprepes_famelicus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_boxi]
+[2012.nc_Diaprepes includes 2001.Diaprepes_excavatus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_glaucus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_marginatus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_reticulatus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_revestitus]
+[2012.nc_Diaprepes includes 2001.Diaprepes_rufescens]
+[2012.nc_Diaprepes includes 2001.Diaprepes_sommeri]
+[2012.nc_Diaprepes includes 2001.Diaprepes_variegatus]
+[1999.Diaprepes_barbadensis is_included_in 1982.Diaprepes_famelicus]
+[1999.Diaprepes_comma is_included_in 1982.Diaprepes_doublierii]
+[1999.Diaprepes_doublierii is_included_in 1982.Diaprepes_doublierii]
+[1999.Diaprepes_elegantulus is_included_in 1982.Diaprepes_famelicus]
+[1999.Diaprepes_esuriens is_included_in 1982.Diaprepes_famelicus]
+[1999.Diaprepes_famelicus is_included_in 1982.Diaprepes_famelicus]
+[2001.Diaprepes is_included_in 1999.Diaprepes]
+[2012.nc_Diaprepes is_included_in 2001.Diaprepes]
+</textarea>
+    </div>
+    <div class="tab-pane fade" id="visualization">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+<svg height="2262pt" viewbox="0.00 0.00 2372.49 2261.58" width="2372pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 2257.58)">
+  <title>
+   %3
+  </title>
+  <polygon fill="white" points="-4,4 -4,-2257.58 2368.49,-2257.58 2368.49,4 -4,4" stroke="none">
+  </polygon>
+  <!-- 1999.Diaprepes_esuriens -->
+  <g class="node" id="node1">
+   <title>
+    1999.Diaprepes_esuriens
+   </title>
+   <polygon fill="#ffcccc" points="1947.49,-592.584 1777.49,-592.584 1777.49,-556.584 1947.49,-556.584 1947.49,-592.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-570.884">
+    1999.Diaprepes_esuriens
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_famelicus -->
+  <g class="node" id="node63">
+   <title>
+    1982.Diaprepes_famelicus
+   </title>
+   <polygon fill="#ccffff" points="2203.99,-806.584 2026.99,-806.584 2026.99,-770.584 2203.99,-770.584 2203.99,-806.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-784.884">
+    1982.Diaprepes_famelicus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_esuriens&#45;&gt;1982.Diaprepes_famelicus -->
+  <g class="edge" id="edge67">
+   <title>
+    1999.Diaprepes_esuriens-&gt;1982.Diaprepes_famelicus
+   </title>
+   <path d="M1896.39,-592.657C1916.27,-604.188 1941.71,-620.035 1962.49,-636.584 2016.8,-679.822 2072.43,-740.469 2098.8,-770.403" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-667.384">
+    &lt;
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_famelicus -->
+  <g class="node" id="node2">
+   <title>
+    1999.Diaprepes_famelicus
+   </title>
+   <polygon fill="#ffcccc" points="1950.99,-831.584 1773.99,-831.584 1773.99,-795.584 1950.99,-795.584 1950.99,-831.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-809.884">
+    1999.Diaprepes_famelicus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_famelicus&#45;&gt;1982.Diaprepes_famelicus -->
+  <g class="edge" id="edge129">
+   <title>
+    1999.Diaprepes_famelicus-&gt;1982.Diaprepes_famelicus
+   </title>
+   <path d="M1951.28,-804.84C1975.74,-802.404 2002.3,-799.758 2026.76,-797.322" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-806.384">
+    &lt;
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_sommeri -->
+  <g class="node" id="node3">
+   <title>
+    1999.Diaprepes_sommeri
+   </title>
+   <polygon fill="#ffcccc" points="1948.99,-986.584 1775.99,-986.584 1775.99,-950.584 1948.99,-950.584 1948.99,-986.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-964.884">
+    1999.Diaprepes_sommeri
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_sommeri -->
+  <g class="node" id="node45">
+   <title>
+    1982.Diaprepes_sommeri
+   </title>
+   <polygon fill="#ccffff" points="2201.99,-1003.58 2028.99,-1003.58 2028.99,-967.584 2201.99,-967.584 2201.99,-1003.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-981.884">
+    1982.Diaprepes_sommeri
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_sommeri&#45;&gt;1982.Diaprepes_sommeri -->
+  <g class="edge" id="edge68">
+   <title>
+    1999.Diaprepes_sommeri-&gt;1982.Diaprepes_sommeri
+   </title>
+   <path d="M1949.17,-974.386C1974.88,-976.127 2003.07,-978.037 2028.78,-979.778" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-982.384">
+    ==
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_excavatus -->
+  <g class="node" id="node4">
+   <title>
+    1999.Diaprepes_excavatus
+   </title>
+   <polygon fill="#ffcccc" points="1952.49,-1047.58 1772.49,-1047.58 1772.49,-1011.58 1952.49,-1011.58 1952.49,-1047.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1025.88">
+    1999.Diaprepes_excavatus
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_excavatus -->
+  <g class="node" id="node56">
+   <title>
+    1982.Diaprepes_excavatus
+   </title>
+   <polygon fill="#ccffff" points="2205.49,-1052.58 2025.49,-1052.58 2025.49,-1016.58 2205.49,-1016.58 2205.49,-1052.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1030.88">
+    1982.Diaprepes_excavatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_excavatus&#45;&gt;1982.Diaprepes_excavatus -->
+  <g class="edge" id="edge88">
+   <title>
+    1999.Diaprepes_excavatus-&gt;1982.Diaprepes_excavatus
+   </title>
+   <path d="M1952.69,-1031.36C1976.23,-1031.83 2001.62,-1032.34 2025.16,-1032.8" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1036.38">
+    ==
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_elegantulus -->
+  <g class="node" id="node5">
+   <title>
+    1999.Diaprepes_elegantulus
+   </title>
+   <polygon fill="#ffcccc" points="1956.49,-780.584 1768.49,-780.584 1768.49,-744.584 1956.49,-744.584 1956.49,-780.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-758.884">
+    1999.Diaprepes_elegantulus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_elegantulus&#45;&gt;1982.Diaprepes_famelicus -->
+  <g class="edge" id="edge69">
+   <title>
+    1999.Diaprepes_elegantulus-&gt;1982.Diaprepes_famelicus
+   </title>
+   <path d="M1956.6,-772.228C1979.62,-774.613 2004.2,-777.159 2026.95,-779.515" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-780.384">
+    &lt;
+   </text>
+  </g>
+  <!-- 1999.Diaprepes -->
+  <g class="node" id="node6">
+   <title>
+    1999.Diaprepes
+   </title>
+   <polygon fill="#ffcccc" points="1670.99,-1132.58 1558.99,-1132.58 1558.99,-1096.58 1670.99,-1096.58 1670.99,-1132.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1110.88">
+    1999.Diaprepes
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_esuriens -->
+  <g class="edge" id="edge36">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_esuriens
+   </title>
+   <path d="M1681.15,-1110.71C1692.06,-1107.13 1702.2,-1101.44 1709.49,-1092.58 1742.72,-1052.24 1696.6,-664.733 1727.49,-622.584 1739.62,-606.041 1757.97,-595.18 1777.23,-588.055" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.15,-1107.35 1671.4,-1113.34 1681.97,-1114.11 1680.15,-1107.35" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_famelicus -->
+  <g class="edge" id="edge29">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_famelicus
+   </title>
+   <path d="M1681.4,-1110.1C1692.09,-1106.55 1702.08,-1101.02 1709.49,-1092.58 1735.44,-1063.05 1708.35,-950.921 1727.49,-916.584 1749.14,-877.758 1792.1,-848.813 1823.56,-831.652" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.15,-1106.81 1671.43,-1112.84 1682,-1113.56 1680.15,-1106.81" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_sommeri -->
+  <g class="edge" id="edge28">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_sommeri
+   </title>
+   <path d="M1681.14,-1108.92C1691.66,-1105.45 1701.65,-1100.27 1709.49,-1092.58 1732.44,-1070.1 1708.01,-1048.12 1727.49,-1022.58 1740.04,-1006.13 1758.42,-994.675 1777.57,-986.703" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.07,-1105.58 1671.37,-1111.64 1681.95,-1112.33 1680.07,-1105.58" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_excavatus -->
+  <g class="edge" id="edge41">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_excavatus
+   </title>
+   <path d="M1681.03,-1101.42C1690.68,-1098.85 1700.43,-1095.9 1709.49,-1092.58 1734.32,-1083.49 1738.25,-1076.12 1762.49,-1065.58 1777.09,-1059.24 1793.19,-1053.05 1808.1,-1047.64" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1679.86,-1098.1 1671.03,-1103.95 1681.58,-1104.89 1679.86,-1098.1" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_elegantulus -->
+  <g class="edge" id="edge23">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_elegantulus
+   </title>
+   <path d="M1681.33,-1110.04C1692.03,-1106.49 1702.04,-1100.99 1709.49,-1092.58 1733.24,-1065.82 1721.31,-967.825 1727.49,-932.584 1739.02,-866.86 1715.37,-833.827 1762.49,-786.584 1764.62,-784.455 1766.89,-782.503 1769.3,-780.714" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.08,-1106.75 1671.36,-1112.78 1681.93,-1113.5 1680.08,-1106.75" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_balloui -->
+  <g class="node" id="node7">
+   <title>
+    1999.Diaprepes_balloui
+   </title>
+   <polygon fill="#ffcccc" points="1941.49,-1761.58 1783.49,-1761.58 1783.49,-1725.58 1941.49,-1725.58 1941.49,-1761.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1739.88">
+    1999.Diaprepes_balloui
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_balloui -->
+  <g class="edge" id="edge37">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_balloui
+   </title>
+   <path d="M1644.85,-1139.61C1667.01,-1160.79 1696.03,-1193.28 1709.49,-1228.58 1726.57,-1273.37 1703.44,-1618.12 1727.49,-1659.58 1745.61,-1690.81 1780.47,-1712.12 1810.1,-1725.47" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1647.03,-1136.86 1637.33,-1132.6 1642.26,-1141.98 1647.03,-1136.86" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_comma -->
+  <g class="node" id="node8">
+   <title>
+    1999.Diaprepes_comma
+   </title>
+   <polygon fill="#ffcccc" points="1944.99,-1316.58 1779.99,-1316.58 1779.99,-1280.58 1944.99,-1280.58 1944.99,-1316.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1294.88">
+    1999.Diaprepes_comma
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_comma -->
+  <g class="edge" id="edge39">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_comma
+   </title>
+   <path d="M1640.49,-1140.58C1668.27,-1169.12 1715.79,-1215.19 1762.49,-1247.58 1780.6,-1260.15 1802.22,-1271.63 1820.62,-1280.51" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1642.66,-1137.78 1633.19,-1133.02 1637.62,-1142.64 1642.66,-1137.78" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_marginatus -->
+  <g class="node" id="node9">
+   <title>
+    1999.Diaprepes_marginatus
+   </title>
+   <polygon fill="#ffcccc" points="1955.99,-1110.58 1768.99,-1110.58 1768.99,-1074.58 1955.99,-1074.58 1955.99,-1110.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1088.88">
+    1999.Diaprepes_marginatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_marginatus -->
+  <g class="edge" id="edge21">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_marginatus
+   </title>
+   <path d="M1681.15,-1108.74C1708.06,-1106.33 1739.75,-1103.49 1768.99,-1100.87" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.74,-1105.27 1671.09,-1109.65 1681.36,-1112.24 1680.74,-1105.27" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_albofasciatus -->
+  <g class="node" id="node10">
+   <title>
+    1999.Diaprepes_albofasciatus
+   </title>
+   <polygon fill="#ffcccc" points="1961.49,-2142.58 1763.49,-2142.58 1763.49,-2106.58 1961.49,-2106.58 1961.49,-2142.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-2120.88">
+    1999.Diaprepes_albofasciatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_albofasciatus -->
+  <g class="edge" id="edge32">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_albofasciatus
+   </title>
+   <path d="M1645.4,-1139.94C1667.59,-1161.1 1696.38,-1193.39 1709.49,-1228.58 1736,-1299.72 1712.23,-1837.22 1727.49,-1911.58 1735.96,-1952.81 1741.43,-1963.14 1762.49,-1999.58 1786.33,-2040.81 1822.82,-2083.06 1844.21,-2106.36" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1647.57,-1137.17 1637.86,-1132.93 1642.8,-1142.3 1647.57,-1137.17" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_barbadensis -->
+  <g class="node" id="node11">
+   <title>
+    1999.Diaprepes_barbadensis
+   </title>
+   <polygon fill="#ffcccc" points="1958.99,-681.584 1765.99,-681.584 1765.99,-645.584 1958.99,-645.584 1958.99,-681.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-659.884">
+    1999.Diaprepes_barbadensis
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_barbadensis -->
+  <g class="edge" id="edge25">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_barbadensis
+   </title>
+   <path d="M1681.08,-1110.65C1692,-1107.08 1702.16,-1101.41 1709.49,-1092.58 1736.45,-1060.17 1702.64,-747.635 1727.49,-713.584 1737.96,-699.244 1753.03,-689.014 1769.32,-681.716" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.08,-1107.3 1671.34,-1113.28 1681.9,-1114.06 1680.08,-1107.3" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_doublierii -->
+  <g class="node" id="node12">
+   <title>
+    1999.Diaprepes_doublierii
+   </title>
+   <polygon fill="#ffcccc" points="1948.99,-1238.58 1775.99,-1238.58 1775.99,-1202.58 1948.99,-1202.58 1948.99,-1238.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1216.88">
+    1999.Diaprepes_doublierii
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_doublierii -->
+  <g class="edge" id="edge30">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_doublierii
+   </title>
+   <path d="M1647.69,-1138.55C1669.23,-1153.86 1698.9,-1173.11 1727.49,-1185.58 1742.81,-1192.26 1759.69,-1197.9 1776.15,-1202.56" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1649.72,-1135.7 1639.56,-1132.69 1645.62,-1141.38 1649.72,-1135.7" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_rufescens -->
+  <g class="node" id="node13">
+   <title>
+    1999.Diaprepes_rufescens
+   </title>
+   <polygon fill="#ffcccc" points="1951.49,-1672.58 1773.49,-1672.58 1773.49,-1636.58 1951.49,-1636.58 1951.49,-1672.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1650.88">
+    1999.Diaprepes_rufescens
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_rufescens -->
+  <g class="edge" id="edge38">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_rufescens
+   </title>
+   <path d="M1644.66,-1139.68C1666.72,-1160.91 1695.69,-1193.42 1709.49,-1228.58 1733.34,-1289.3 1710.74,-1458.54 1727.49,-1521.58 1736.53,-1555.59 1738.91,-1566.48 1762.49,-1592.58 1779.08,-1610.94 1802.34,-1625.88 1822.15,-1636.5" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1646.87,-1136.95 1637.19,-1132.65 1642.08,-1142.05 1646.87,-1136.95" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_spengleri -->
+  <g class="node" id="node14">
+   <title>
+    1999.Diaprepes_spengleri
+   </title>
+   <polygon fill="#ffcccc" points="1949.49,-1405.58 1775.49,-1405.58 1775.49,-1369.58 1949.49,-1369.58 1949.49,-1405.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1383.88">
+    1999.Diaprepes_spengleri
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_spengleri -->
+  <g class="edge" id="edge34">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_spengleri
+   </title>
+   <path d="M1642.72,-1139.98C1663.91,-1161.6 1692.68,-1194.5 1709.49,-1228.58 1725.04,-1260.1 1706.91,-1277.1 1727.49,-1305.58 1748.82,-1335.1 1784.34,-1356.13 1813.46,-1369.5" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1645.11,-1137.42 1635.57,-1132.82 1640.16,-1142.37 1645.11,-1137.42" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_maugei -->
+  <g class="node" id="node15">
+   <title>
+    1999.Diaprepes_maugei
+   </title>
+   <polygon fill="#ffcccc" points="1944.49,-1583.58 1780.49,-1583.58 1780.49,-1547.58 1944.49,-1547.58 1944.49,-1583.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1561.88">
+    1999.Diaprepes_maugei
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_maugei -->
+  <g class="edge" id="edge27">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_maugei
+   </title>
+   <path d="M1644.56,-1139.72C1666.56,-1160.97 1695.5,-1193.49 1709.49,-1228.58 1730.05,-1280.11 1700.8,-1428.95 1727.49,-1477.58 1745.71,-1510.76 1782.39,-1533.53 1812.77,-1547.58" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1646.78,-1137 1637.11,-1132.69 1641.98,-1142.09 1646.78,-1137" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_pulverulentus -->
+  <g class="node" id="node16">
+   <title>
+    1999.Diaprepes_pulverulentus
+   </title>
+   <polygon fill="#ffcccc" points="1962.49,-1990.58 1762.49,-1990.58 1762.49,-1954.58 1962.49,-1954.58 1962.49,-1990.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1968.88">
+    1999.Diaprepes_pulverulentus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_pulverulentus -->
+  <g class="edge" id="edge33">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_pulverulentus
+   </title>
+   <path d="M1645.39,-1139.94C1667.58,-1161.1 1696.37,-1193.4 1709.49,-1228.58 1735.06,-1297.11 1691.55,-1822.89 1727.49,-1886.58 1745.63,-1918.72 1781.29,-1940.73 1811.27,-1954.43" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1647.56,-1137.18 1637.86,-1132.93 1642.79,-1142.31 1647.56,-1137.18" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_abbreviatus -->
+  <g class="node" id="node17">
+   <title>
+    1999.Diaprepes_abbreviatus
+   </title>
+   <polygon fill="#ffcccc" points="1956.99,-1151.58 1767.99,-1151.58 1767.99,-1115.58 1956.99,-1115.58 1956.99,-1151.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1129.88">
+    1999.Diaprepes_abbreviatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge35">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_abbreviatus
+   </title>
+   <path d="M1681.35,-1119.64C1707.77,-1121.69 1738.77,-1124.09 1767.54,-1126.31" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1681.33,-1116.13 1671.09,-1118.85 1680.79,-1123.11 1681.33,-1116.13" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_variegatus -->
+  <g class="node" id="node18">
+   <title>
+    1999.Diaprepes_variegatus
+   </title>
+   <polygon fill="#ffcccc" points="1953.49,-414.584 1771.49,-414.584 1771.49,-378.584 1953.49,-378.584 1953.49,-414.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-392.884">
+    1999.Diaprepes_variegatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_variegatus -->
+  <g class="edge" id="edge20">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_variegatus
+   </title>
+   <path d="M1681.22,-1110.77C1692.13,-1107.19 1702.24,-1101.48 1709.49,-1092.58 1755.06,-1036.66 1684.96,-501.848 1727.49,-443.584 1738.32,-428.749 1754.2,-418.568 1771.26,-411.589" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.22,-1107.41 1671.48,-1113.4 1682.05,-1114.17 1680.22,-1107.41" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_reticulatus -->
+  <g class="node" id="node19">
+   <title>
+    1999.Diaprepes_reticulatus
+   </title>
+   <polygon fill="#ffcccc" points="1952.99,-503.584 1771.99,-503.584 1771.99,-467.584 1952.99,-467.584 1952.99,-503.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-481.884">
+    1999.Diaprepes_reticulatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_reticulatus -->
+  <g class="edge" id="edge40">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_reticulatus
+   </title>
+   <path d="M1681.19,-1110.74C1692.1,-1107.16 1702.22,-1101.47 1709.49,-1092.58 1748.92,-1044.41 1690.68,-582.784 1727.49,-532.584 1738.43,-517.674 1754.46,-507.466 1771.66,-500.485" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1680.19,-1107.39 1671.45,-1113.37 1682.01,-1114.15 1680.19,-1107.39" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_boxi -->
+  <g class="node" id="node20">
+   <title>
+    1999.Diaprepes_boxi
+   </title>
+   <polygon fill="#ffcccc" points="1934.49,-1494.58 1790.49,-1494.58 1790.49,-1458.58 1934.49,-1458.58 1934.49,-1494.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1472.88">
+    1999.Diaprepes_boxi
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_boxi -->
+  <g class="edge" id="edge22">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_boxi
+   </title>
+   <path d="M1644,-1139.95C1665.68,-1161.33 1694.46,-1193.92 1709.49,-1228.58 1733.76,-1284.52 1705.38,-1307.76 1727.49,-1364.58 1737.33,-1389.86 1742.83,-1395.9 1762.49,-1414.58 1781.02,-1432.18 1805.29,-1447.48 1825.17,-1458.47" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1646.29,-1137.3 1636.67,-1132.87 1641.43,-1142.33 1646.29,-1137.3" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_revestitus -->
+  <g class="node" id="node21">
+   <title>
+    1999.Diaprepes_revestitus
+   </title>
+   <polygon fill="#ffcccc" points="1950.99,-236.584 1773.99,-236.584 1773.99,-200.584 1950.99,-200.584 1950.99,-236.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-214.884">
+    1999.Diaprepes_revestitus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_revestitus -->
+  <g class="edge" id="edge26">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_revestitus
+   </title>
+   <path d="M1680.9,-1110.92C1691.94,-1107.35 1702.19,-1101.6 1709.49,-1092.58 1738.42,-1056.87 1700.51,-302.781 1727.49,-265.584 1738.86,-249.919 1755.85,-239.441 1773.96,-232.443" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1679.8,-1107.59 1671.04,-1113.54 1681.6,-1114.36 1679.8,-1107.59" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_rohrii -->
+  <g class="node" id="node22">
+   <title>
+    1999.Diaprepes_rohrii
+   </title>
+   <polygon fill="#ffcccc" points="1936.99,-147.584 1787.99,-147.584 1787.99,-111.584 1936.99,-111.584 1936.99,-147.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-125.884">
+    1999.Diaprepes_rohrii
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_rohrii -->
+  <g class="edge" id="edge24">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_rohrii
+   </title>
+   <path d="M1680.91,-1110.94C1691.96,-1107.36 1702.2,-1101.61 1709.49,-1092.58 1741.49,-1053 1697.65,-217.814 1727.49,-176.584 1741.73,-156.912 1764.85,-145.421 1787.91,-138.726" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1679.82,-1107.61 1671.05,-1113.55 1681.61,-1114.37 1679.82,-1107.61" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1999.Diaprepes_glaucus -->
+  <g class="node" id="node23">
+   <title>
+    1999.Diaprepes_glaucus
+   </title>
+   <polygon fill="#ffcccc" points="1945.49,-325.584 1779.49,-325.584 1779.49,-289.584 1945.49,-289.584 1945.49,-325.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-303.884">
+    1999.Diaprepes_glaucus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1999.Diaprepes_glaucus -->
+  <g class="edge" id="edge31">
+   <title>
+    1999.Diaprepes-&gt;1999.Diaprepes_glaucus
+   </title>
+   <path d="M1680.88,-1110.91C1691.93,-1107.33 1702.18,-1101.59 1709.49,-1092.58 1761.2,-1028.91 1679.24,-420.914 1727.49,-354.584 1739.97,-337.438 1759.18,-326.508 1779.2,-319.553" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1679.78,-1107.58 1671.02,-1113.53 1681.58,-1114.34 1679.78,-1107.58" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_doublierii -->
+  <g class="node" id="node54">
+   <title>
+    1982.Diaprepes_doublierii
+   </title>
+   <polygon fill="#ccffff" points="2201.99,-1213.58 2028.99,-1213.58 2028.99,-1177.58 2201.99,-1177.58 2201.99,-1213.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1191.88">
+    1982.Diaprepes_doublierii
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1982.Diaprepes_doublierii -->
+  <g class="edge" id="edge133">
+   <title>
+    1999.Diaprepes-&gt;1982.Diaprepes_doublierii
+   </title>
+   <path d="M1671.26,-1130.76C1698.53,-1138.27 1732.03,-1146.8 1762.49,-1152.58 1788.01,-1157.43 1932.84,-1174.57 2028.59,-1185.69" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-1181.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 1999.Diaprepes&#45;&gt;1982.Diaprepes_famelicus -->
+  <g class="edge" id="edge123">
+   <title>
+    1999.Diaprepes-&gt;1982.Diaprepes_famelicus
+   </title>
+   <path d="M1671.25,-1112.12C1685.38,-1108.9 1699.41,-1103.01 1709.49,-1092.58 1737.85,-1063.26 1714.88,-1041.38 1727.49,-1002.58 1739,-967.22 1735.45,-952.106 1762.49,-926.584 1785.29,-905.072 1970.01,-838.841 2062.35,-806.595" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-930.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_balloui -->
+  <g class="node" id="node46">
+   <title>
+    1982.Diaprepes_balloui
+   </title>
+   <polygon fill="#ccffff" points="2194.49,-1705.58 2036.49,-1705.58 2036.49,-1669.58 2194.49,-1669.58 2194.49,-1705.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1683.88">
+    1982.Diaprepes_balloui
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_balloui&#45;&gt;1982.Diaprepes_balloui -->
+  <g class="edge" id="edge118">
+   <title>
+    1999.Diaprepes_balloui-&gt;1982.Diaprepes_balloui
+   </title>
+   <path d="M1941.54,-1726.17C1971.61,-1719.46 2005.95,-1711.8 2036.07,-1705.08" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1721.38">
+    ==
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_comma&#45;&gt;1982.Diaprepes_doublierii -->
+  <g class="edge" id="edge65">
+   <title>
+    1999.Diaprepes_comma-&gt;1982.Diaprepes_doublierii
+   </title>
+   <path d="M1907.5,-1280.52C1953.34,-1261.72 2024.72,-1232.42 2070.54,-1213.62" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1254.38">
+    &lt;
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_marginatus -->
+  <g class="node" id="node53">
+   <title>
+    1982.Diaprepes_marginatus
+   </title>
+   <polygon fill="#ccffff" points="2208.99,-1098.58 2021.99,-1098.58 2021.99,-1062.58 2208.99,-1062.58 2208.99,-1098.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1076.88">
+    1982.Diaprepes_marginatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_marginatus&#45;&gt;1982.Diaprepes_marginatus -->
+  <g class="edge" id="edge75">
+   <title>
+    1999.Diaprepes_marginatus-&gt;1982.Diaprepes_marginatus
+   </title>
+   <path d="M1956.24,-1088.15C1977.61,-1087.13 2000.34,-1086.04 2021.71,-1085.02" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1091.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_albofasciatus -->
+  <g class="node" id="node57">
+   <title>
+    1982.Diaprepes_albofasciatus
+   </title>
+   <polygon fill="#ccffff" points="2214.49,-2020.58 2016.49,-2020.58 2016.49,-1984.58 2214.49,-1984.58 2214.49,-2020.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1998.88">
+    1982.Diaprepes_albofasciatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_albofasciatus&#45;&gt;1982.Diaprepes_albofasciatus -->
+  <g class="edge" id="edge61">
+   <title>
+    1999.Diaprepes_albofasciatus-&gt;1982.Diaprepes_albofasciatus
+   </title>
+   <path d="M1900.53,-2106.58C1947.99,-2083.52 2029.78,-2043.76 2077.31,-2020.66" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-2071.38">
+    ==
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_barbadensis&#45;&gt;1982.Diaprepes_famelicus -->
+  <g class="edge" id="edge115">
+   <title>
+    1999.Diaprepes_barbadensis-&gt;1982.Diaprepes_famelicus
+   </title>
+   <path d="M1899.72,-681.626C1947.38,-705.357 2030.63,-746.818 2078.28,-770.546" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-734.384">
+    &lt;
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_doublierii&#45;&gt;1982.Diaprepes_doublierii -->
+  <g class="edge" id="edge81">
+   <title>
+    1999.Diaprepes_doublierii-&gt;1982.Diaprepes_doublierii
+   </title>
+   <path d="M1949.17,-1212.05C1974.88,-1209.49 2003.07,-1206.68 2028.78,-1204.12" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1213.38">
+    &lt;
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_rufescens -->
+  <g class="node" id="node44">
+   <title>
+    1982.Diaprepes_rufescens
+   </title>
+   <polygon fill="#ccffff" points="2204.49,-1615.58 2026.49,-1615.58 2026.49,-1579.58 2204.49,-1579.58 2204.49,-1615.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1593.88">
+    1982.Diaprepes_rufescens
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_rufescens&#45;&gt;1982.Diaprepes_rufescens -->
+  <g class="edge" id="edge74">
+   <title>
+    1999.Diaprepes_rufescens-&gt;1982.Diaprepes_rufescens
+   </title>
+   <path d="M1942.91,-1636.55C1972.35,-1629.86 2005.73,-1622.28 2035.16,-1615.6" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1632.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_spengleri -->
+  <g class="node" id="node49">
+   <title>
+    1982.Diaprepes_spengleri
+   </title>
+   <polygon fill="#ccffff" points="2202.49,-1324.58 2028.49,-1324.58 2028.49,-1288.58 2202.49,-1288.58 2202.49,-1324.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1302.88">
+    1982.Diaprepes_spengleri
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_spengleri&#45;&gt;1982.Diaprepes_spengleri -->
+  <g class="edge" id="edge114">
+   <title>
+    1999.Diaprepes_spengleri-&gt;1982.Diaprepes_spengleri
+   </title>
+   <path d="M1919.51,-1369.51C1960.98,-1356.12 2017.22,-1337.97 2058.65,-1324.61" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1353.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_maugei -->
+  <g class="node" id="node47">
+   <title>
+    1982.Diaprepes_maugei
+   </title>
+   <polygon fill="#ccffff" points="2197.49,-1515.58 2033.49,-1515.58 2033.49,-1479.58 2197.49,-1479.58 2197.49,-1515.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1493.88">
+    1982.Diaprepes_maugei
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_maugei&#45;&gt;1982.Diaprepes_maugei -->
+  <g class="edge" id="edge105">
+   <title>
+    1999.Diaprepes_maugei-&gt;1982.Diaprepes_maugei
+   </title>
+   <path d="M1930.1,-1547.54C1966.55,-1537.66 2011.58,-1525.46 2048.01,-1515.59" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1538.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_pulverulentus -->
+  <g class="node" id="node51">
+   <title>
+    1982.Diaprepes_pulverulentus
+   </title>
+   <polygon fill="#ccffff" points="2215.49,-1806.58 2015.49,-1806.58 2015.49,-1770.58 2215.49,-1770.58 2215.49,-1806.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1784.88">
+    1982.Diaprepes_pulverulentus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_pulverulentus&#45;&gt;1982.Diaprepes_pulverulentus -->
+  <g class="edge" id="edge130">
+   <title>
+    1999.Diaprepes_pulverulentus-&gt;1982.Diaprepes_pulverulentus
+   </title>
+   <path d="M1888.48,-1954.27C1936.59,-1919 2041.58,-1842.04 2089.61,-1806.82" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1890.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_abbreviatus -->
+  <g class="node" id="node52">
+   <title>
+    1982.Diaprepes_abbreviatus
+   </title>
+   <polygon fill="#ccffff" points="2209.99,-1144.58 2020.99,-1144.58 2020.99,-1108.58 2209.99,-1108.58 2209.99,-1144.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1122.88">
+    1982.Diaprepes_abbreviatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_abbreviatus&#45;&gt;1982.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge84">
+   <title>
+    1999.Diaprepes_abbreviatus-&gt;1982.Diaprepes_abbreviatus
+   </title>
+   <path d="M1957.31,-1130.97C1978.06,-1130.39 2000.04,-1129.78 2020.79,-1129.2" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1134.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_variegatus -->
+  <g class="node" id="node59">
+   <title>
+    1982.Diaprepes_variegatus
+   </title>
+   <polygon fill="#ccffff" points="2206.49,-543.584 2024.49,-543.584 2024.49,-507.584 2206.49,-507.584 2206.49,-543.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-521.884">
+    1982.Diaprepes_variegatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_variegatus&#45;&gt;1982.Diaprepes_variegatus -->
+  <g class="edge" id="edge96">
+   <title>
+    1999.Diaprepes_variegatus-&gt;1982.Diaprepes_variegatus
+   </title>
+   <path d="M1893.27,-414.666C1923.55,-432.762 1972.07,-460.946 2015.49,-482.584 2033.1,-491.359 2052.92,-500.17 2070.18,-507.511" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-476.384">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_reticulatus -->
+  <g class="node" id="node55">
+   <title>
+    1982.Diaprepes_reticulatus
+   </title>
+   <polygon fill="#ccffff" points="2205.99,-654.584 2024.99,-654.584 2024.99,-618.584 2205.99,-618.584 2205.99,-654.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-632.884">
+    1982.Diaprepes_reticulatus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_reticulatus&#45;&gt;1982.Diaprepes_reticulatus -->
+  <g class="edge" id="edge127">
+   <title>
+    1999.Diaprepes_reticulatus-&gt;1982.Diaprepes_reticulatus
+   </title>
+   <path d="M1893.77,-503.798C1942.14,-532.899 2036.31,-589.546 2084.5,-618.54" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-570.384">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_boxi -->
+  <g class="node" id="node50">
+   <title>
+    1982.Diaprepes_boxi
+   </title>
+   <polygon fill="#ccffff" points="2187.49,-1422.58 2043.49,-1422.58 2043.49,-1386.58 2187.49,-1386.58 2187.49,-1422.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-1400.88">
+    1982.Diaprepes_boxi
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_boxi&#45;&gt;1982.Diaprepes_boxi -->
+  <g class="edge" id="edge104">
+   <title>
+    1999.Diaprepes_boxi-&gt;1982.Diaprepes_boxi
+   </title>
+   <path d="M1926.51,-1458.51C1964.7,-1447.55 2013.26,-1433.62 2051.45,-1422.67" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-1447.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_revestitus -->
+  <g class="node" id="node62">
+   <title>
+    1982.Diaprepes_revestitus
+   </title>
+   <polygon fill="#ccffff" points="2203.99,-352.584 2026.99,-352.584 2026.99,-316.584 2203.99,-316.584 2203.99,-352.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-330.884">
+    1982.Diaprepes_revestitus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_revestitus&#45;&gt;1982.Diaprepes_revestitus -->
+  <g class="edge" id="edge102">
+   <title>
+    1999.Diaprepes_revestitus-&gt;1982.Diaprepes_revestitus
+   </title>
+   <path d="M1902.71,-236.709C1949.73,-258.437 2028.06,-294.638 2075.14,-316.395" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-284.384">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_rohrii -->
+  <g class="node" id="node58">
+   <title>
+    1982.Diaprepes_rohrii
+   </title>
+   <polygon fill="#ccffff" points="2189.99,-238.584 2040.99,-238.584 2040.99,-202.584 2189.99,-202.584 2189.99,-238.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-216.884">
+    1982.Diaprepes_rohrii
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_rohrii&#45;&gt;1982.Diaprepes_rohrii -->
+  <g class="edge" id="edge93">
+   <title>
+    1999.Diaprepes_rohrii-&gt;1982.Diaprepes_rohrii
+   </title>
+   <path d="M1913.38,-147.671C1957.27,-163.584 2020.84,-186.628 2064.7,-202.53" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-182.384">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_glaucus -->
+  <g class="node" id="node60">
+   <title>
+    1982.Diaprepes_glaucus
+   </title>
+   <polygon fill="#ccffff" points="2198.49,-473.584 2032.49,-473.584 2032.49,-437.584 2198.49,-437.584 2198.49,-473.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2115.49" y="-451.884">
+    1982.Diaprepes_glaucus
+   </text>
+  </g>
+  <!-- 1999.Diaprepes_glaucus&#45;&gt;1982.Diaprepes_glaucus -->
+  <g class="edge" id="edge122">
+   <title>
+    1999.Diaprepes_glaucus-&gt;1982.Diaprepes_glaucus
+   </title>
+   <path d="M1894.27,-325.731C1942.58,-354.214 2035.64,-409.088 2083.86,-437.519" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1988.99" y="-390.384">
+    ==
+   </text>
+  </g>
+  <!-- 2016.Diaprepes_anticus -->
+  <g class="node" id="node24">
+   <title>
+    2016.Diaprepes_anticus
+   </title>
+   <polygon fill="#ccffcc" points="1412.02,-2104.58 1250.02,-2104.58 1250.02,-2068.58 1412.02,-2068.58 1412.02,-2104.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-2082.88">
+    2016.Diaprepes_anticus
+   </text>
+  </g>
+  <!-- 2016.Diaprepes_anticus&#45;&gt;1999.Diaprepes -->
+  <g class="edge" id="edge100">
+   <title>
+    2016.Diaprepes_anticus-&gt;1999.Diaprepes
+   </title>
+   <path d="M1412.27,-2089.88C1432.74,-2086.72 1453.02,-2079.43 1467.49,-2064.58 1532.48,-1997.95 1487.8,-1315.73 1520.49,-1228.58 1535.24,-1189.28 1569.47,-1153.55 1592.16,-1132.94" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1493.99" y="-2020.38">
+    !
+   </text>
+  </g>
+  <!-- 1982.Diaprepes -->
+  <g class="node" id="node48">
+   <title>
+    1982.Diaprepes
+   </title>
+   <polygon fill="#ccffff" points="2364.49,-1098.58 2252.49,-1098.58 2252.49,-1062.58 2364.49,-1062.58 2364.49,-1098.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="2308.49" y="-1076.88">
+    1982.Diaprepes
+   </text>
+  </g>
+  <!-- 2016.Diaprepes_anticus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge103">
+   <title>
+    2016.Diaprepes_anticus-&gt;1982.Diaprepes
+   </title>
+   <path d="M1349.99,-2104.62C1392.13,-2144.88 1502.21,-2238.58 1613.99,-2238.58 1613.99,-2238.58 1613.99,-2238.58 2116.49,-2238.58 2219.28,-2238.58 2188.13,-2128.66 2215.49,-2029.58 2266.67,-1844.3 2300.71,-1214.12 2306.59,-1098.79" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-2242.38">
+    !
+   </text>
+  </g>
+  <!-- 2016.Diaprepes -->
+  <g class="node" id="node25">
+   <title>
+    2016.Diaprepes
+   </title>
+   <polygon fill="#ccffcc" points="221,-2104.58 109,-2104.58 109,-2068.58 221,-2068.58 221,-2104.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="165" y="-2082.88">
+    2016.Diaprepes
+   </text>
+  </g>
+  <!-- 2016.Diaprepes&#45;&gt;1999.Diaprepes_albofasciatus -->
+  <g class="edge" id="edge120">
+   <title>
+    2016.Diaprepes-&gt;1999.Diaprepes_albofasciatus
+   </title>
+   <path d="M178.7,-2104.65C202.947,-2136.79 259.225,-2200.58 324,-2200.58 324,-2200.58 324,-2200.58 1615.99,-2200.58 1694.07,-2200.58 1780.13,-2165.07 1826.76,-2142.59" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="776.542" y="-2204.38">
+    !
+   </text>
+  </g>
+  <!-- 2016.Diaprepes&#45;&gt;1999.Diaprepes_pulverulentus -->
+  <g class="edge" id="edge124">
+   <title>
+    2016.Diaprepes-&gt;1999.Diaprepes_pulverulentus
+   </title>
+   <path d="M215.086,-2104.69C245.916,-2114.48 286.759,-2124.58 324,-2124.58 324,-2124.58 324,-2124.58 777.542,-2124.58 1192.16,-2124.58 1322.44,-2231.25 1709.49,-2082.58 1763.92,-2061.68 1816.55,-2016.23 1843.29,-1990.78" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="776.542" y="-2128.38">
+    !
+   </text>
+  </g>
+  <!-- 2016.Diaprepes&#45;&gt;2016.Diaprepes_anticus -->
+  <g class="edge" id="edge58">
+   <title>
+    2016.Diaprepes-&gt;2016.Diaprepes_anticus
+   </title>
+   <path d="M231.431,-2086.58C259.875,-2086.58 293.584,-2086.58 324,-2086.58 324,-2086.58 324,-2086.58 777.542,-2086.58 945.635,-2086.58 1142.49,-2086.58 1249.96,-2086.58" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="231.206,-2083.08 221.206,-2086.58 231.206,-2090.08 231.206,-2083.08" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2016.nc_Diaprepes -->
+  <g class="node" id="node26">
+   <title>
+    2016.nc_Diaprepes
+   </title>
+   <polygon fill="#ccffcc" points="392,-1833.58 258,-1833.58 258,-1797.58 392,-1797.58 392,-1833.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="325" y="-1811.88">
+    2016.nc_Diaprepes
+   </text>
+  </g>
+  <!-- 2016.Diaprepes&#45;&gt;2016.nc_Diaprepes -->
+  <g class="edge" id="edge59">
+   <title>
+    2016.Diaprepes-&gt;2016.nc_Diaprepes
+   </title>
+   <path d="M181.771,-2059.53C213.919,-2004.39 286.276,-1880.29 313.434,-1833.71" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="178.625,-2057.98 176.612,-2068.38 184.673,-2061.51 178.625,-2057.98" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_viridans -->
+  <g class="node" id="node61">
+   <title>
+    1982.Diaprepes_viridans
+   </title>
+   <polygon fill="#ccffff" points="859.542,-531.584 693.542,-531.584 693.542,-495.584 859.542,-495.584 859.542,-531.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="776.542" y="-509.884">
+    1982.Diaprepes_viridans
+   </text>
+  </g>
+  <!-- 2016.Diaprepes&#45;&gt;1982.Diaprepes_viridans -->
+  <g class="edge" id="edge80">
+   <title>
+    2016.Diaprepes-&gt;1982.Diaprepes_viridans
+   </title>
+   <path d="M167.891,-2068.27C182.233,-1935.98 282.648,-1116.21 620.582,-563.584 635.994,-538.381 664.644,-525.423 693.157,-518.912" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="418.5" y="-1004.38">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes -->
+  <g class="node" id="node68">
+   <title>
+    2012.Diaprepes
+   </title>
+   <polygon fill="#ffffcc" points="602.374,-1664.13 602.374,-1679.04 556.341,-1689.58 491.241,-1689.58 445.208,-1679.04 445.208,-1664.13 491.241,-1653.58 556.341,-1653.58 602.374,-1664.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="523.791" y="-1667.88">
+    2012.Diaprepes
+   </text>
+  </g>
+  <!-- 2016.nc_Diaprepes&#45;&gt;2012.Diaprepes -->
+  <g class="edge" id="edge73">
+   <title>
+    2016.nc_Diaprepes-&gt;2012.Diaprepes
+   </title>
+   <path d="M350.924,-1797.35C388.777,-1769.65 460.337,-1717.28 498.07,-1689.67" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="418.5" y="-1756.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_comma -->
+  <g class="node" id="node27">
+   <title>
+    2001.Diaprepes_comma
+   </title>
+   <polygon fill="#ccccff" points="1697.49,-1617.58 1532.49,-1617.58 1532.49,-1581.58 1697.49,-1581.58 1697.49,-1617.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1595.88">
+    2001.Diaprepes_comma
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_comma&#45;&gt;1999.Diaprepes_comma -->
+  <g class="edge" id="edge119">
+   <title>
+    2001.Diaprepes_comma-&gt;1999.Diaprepes_comma
+   </title>
+   <path d="M1643.97,-1581.54C1674.1,-1560.47 1720.89,-1522.69 1744.49,-1477.58 1768.88,-1430.97 1733.57,-1404.53 1762.49,-1360.58 1775.26,-1341.19 1796.41,-1326.74 1815.89,-1316.69" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1506.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_famelicus -->
+  <g class="node" id="node28">
+   <title>
+    2001.Diaprepes_famelicus
+   </title>
+   <polygon fill="#ccccff" points="1703.49,-794.584 1526.49,-794.584 1526.49,-758.584 1703.49,-758.584 1703.49,-794.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-772.884">
+    2001.Diaprepes_famelicus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_famelicus&#45;&gt;1999.Diaprepes_esuriens -->
+  <g class="edge" id="edge83">
+   <title>
+    2001.Diaprepes_famelicus-&gt;1999.Diaprepes_esuriens
+   </title>
+   <path d="M1703.84,-760.153C1705.86,-758.454 1707.75,-756.602 1709.49,-754.584 1739.98,-719.317 1693.15,-577.1 1727.49,-545.584 1756.61,-518.87 1804.31,-538.994 1834.25,-556.446" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-549.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_famelicus&#45;&gt;1999.Diaprepes_famelicus -->
+  <g class="edge" id="edge89">
+   <title>
+    2001.Diaprepes_famelicus-&gt;1999.Diaprepes_famelicus
+   </title>
+   <path d="M1703.59,-789.785C1726.44,-793.23 1751.08,-796.943 1773.94,-800.387" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-799.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_famelicus&#45;&gt;1999.Diaprepes_elegantulus -->
+  <g class="edge" id="edge131">
+   <title>
+    2001.Diaprepes_famelicus-&gt;1999.Diaprepes_elegantulus
+   </title>
+   <path d="M1703.66,-758.501C1705.67,-757.278 1707.62,-755.974 1709.49,-754.584 1722.29,-745.096 1713.69,-731.532 1727.49,-723.584 1762.67,-703.335 1809.18,-726.28 1837.13,-744.564" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-727.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_famelicus&#45;&gt;1999.Diaprepes_barbadensis -->
+  <g class="edge" id="edge64">
+   <title>
+    2001.Diaprepes_famelicus-&gt;1999.Diaprepes_barbadensis
+   </title>
+   <path d="M1703.68,-760.005C1705.74,-758.349 1707.69,-756.546 1709.49,-754.584 1746.03,-714.915 1686.63,-669.776 1727.49,-634.584 1757.25,-608.955 1804.32,-628.41 1834.02,-645.48" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-638.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_rufescens -->
+  <g class="node" id="node29">
+   <title>
+    2001.Diaprepes_rufescens
+   </title>
+   <polygon fill="#ccccff" points="1703.99,-1858.58 1525.99,-1858.58 1525.99,-1822.58 1703.99,-1822.58 1703.99,-1858.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1836.88">
+    2001.Diaprepes_rufescens
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_rufescens&#45;&gt;1999.Diaprepes_rufescens -->
+  <g class="edge" id="edge78">
+   <title>
+    2001.Diaprepes_rufescens-&gt;1999.Diaprepes_rufescens
+   </title>
+   <path d="M1704.03,-1832.71C1719.19,-1827.71 1733.57,-1820.08 1744.49,-1808.58 1773.2,-1778.38 1738.89,-1750.92 1762.49,-1716.58 1775.76,-1697.28 1797.21,-1682.78 1816.76,-1672.67" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1826.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_boxi -->
+  <g class="node" id="node30">
+   <title>
+    2001.Diaprepes_boxi
+   </title>
+   <polygon fill="#ccccff" points="1686.99,-1658.58 1542.99,-1658.58 1542.99,-1622.58 1686.99,-1622.58 1686.99,-1658.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1636.88">
+    2001.Diaprepes_boxi
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_boxi&#45;&gt;1999.Diaprepes_boxi -->
+  <g class="edge" id="edge134">
+   <title>
+    2001.Diaprepes_boxi-&gt;1999.Diaprepes_boxi
+   </title>
+   <path d="M1687.04,-1650.42C1707.75,-1649.53 1728.95,-1644.42 1744.49,-1630.58 1775.61,-1602.87 1738.89,-1572.92 1762.49,-1538.58 1775.76,-1519.28 1797.21,-1504.78 1816.76,-1494.67" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1644.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes -->
+  <g class="node" id="node31">
+   <title>
+    2001.Diaprepes
+   </title>
+   <polygon fill="#ccccff" points="1387.02,-1312.58 1275.02,-1312.58 1275.02,-1276.58 1387.02,-1276.58 1387.02,-1312.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1290.88">
+    2001.Diaprepes
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;1999.Diaprepes -->
+  <g class="edge" id="edge86">
+   <title>
+    2001.Diaprepes-&gt;1999.Diaprepes
+   </title>
+   <path d="M1387.06,-1293.28C1412.77,-1290.71 1443.02,-1284.76 1467.49,-1271.58 1471.63,-1269.36 1560.02,-1173.37 1597.46,-1132.6" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1493.99" y="-1255.38">
+    &lt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;1999.Diaprepes_albofasciatus -->
+  <g class="edge" id="edge62">
+   <title>
+    2001.Diaprepes-&gt;1999.Diaprepes_albofasciatus
+   </title>
+   <path d="M1367.3,-1312.67C1399.83,-1331.5 1446.2,-1364.3 1467.49,-1407.58 1490.32,-1453.98 1476.77,-1821.62 1485.49,-1872.58 1494.36,-1924.41 1484.96,-1946.83 1520.49,-1985.58 1584,-2054.85 1687.01,-2090.4 1763.22,-2108.12" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-2096.38">
+    !
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;1999.Diaprepes_pulverulentus -->
+  <g class="edge" id="edge109">
+   <title>
+    2001.Diaprepes-&gt;1999.Diaprepes_pulverulentus
+   </title>
+   <path d="M1366.75,-1312.61C1399.12,-1331.5 1445.59,-1364.43 1467.49,-1407.58 1495.91,-1463.58 1478.01,-1627.24 1485.49,-1689.58 1490.66,-1732.6 1495.81,-1742.77 1502.49,-1785.58 1507.1,-1815.05 1499.64,-1897.26 1520.49,-1918.58 1553.34,-1952.17 1673.81,-1964.87 1762.28,-1969.67" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1970.38">
+    !
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_comma -->
+  <g class="edge" id="edge56">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_comma
+   </title>
+   <path d="M1381.09,-1317.35C1409.41,-1332.51 1443.95,-1354.76 1467.49,-1382.58 1486.59,-1405.15 1503.96,-1480.08 1520.49,-1504.58 1540.82,-1534.7 1571.38,-1563.61 1591.98,-1581.46" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1382.62,-1314.2 1372.14,-1312.67 1379.38,-1320.4 1382.62,-1314.2" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_famelicus -->
+  <g class="edge" id="edge48">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_famelicus
+   </title>
+   <path d="M1397.2,-1299.39C1422.59,-1297.64 1449.79,-1290.64 1467.49,-1271.58 1496.36,-1240.51 1476.06,-1122.93 1485.49,-1081.58 1490.34,-1060.33 1497.29,-1056.75 1502.49,-1035.58 1517.46,-974.661 1496.24,-953.441 1520.49,-895.584 1537.56,-854.875 1572.49,-816.347 1594.49,-794.67" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397.05,-1295.89 1387.21,-1299.83 1397.35,-1302.89 1397.05,-1295.89" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_rufescens -->
+  <g class="edge" id="edge57">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_rufescens
+   </title>
+   <path d="M1388.67,-1317.14C1417.13,-1331.51 1449.34,-1353.04 1467.49,-1382.58 1487.04,-1414.38 1480.56,-1512.58 1485.49,-1549.58 1491.85,-1597.31 1496.02,-1608.87 1502.49,-1656.58 1507.3,-1692.04 1497.01,-1789.58 1520.49,-1816.58 1522.36,-1818.73 1524.4,-1820.7 1526.56,-1822.51" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1390.11,-1313.95 1379.58,-1312.73 1387.05,-1320.25 1390.11,-1313.95" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_boxi -->
+  <g class="edge" id="edge52">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_boxi
+   </title>
+   <path d="M1385.28,-1317.22C1413.7,-1331.9 1446.96,-1353.71 1467.49,-1382.58 1486.86,-1409.81 1476.01,-1423.54 1485.49,-1455.58 1492.04,-1477.69 1496.9,-1482.22 1502.49,-1504.58 1514.95,-1554.34 1485.6,-1580.99 1520.49,-1618.58 1526.62,-1625.18 1534.32,-1629.98 1542.66,-1633.44" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1386.75,-1314.05 1376.24,-1312.7 1383.62,-1320.31 1386.75,-1314.05" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_balloui -->
+  <g class="node" id="node32">
+   <title>
+    2001.Diaprepes_balloui
+   </title>
+   <polygon fill="#ccccff" points="1693.99,-1909.58 1535.99,-1909.58 1535.99,-1873.58 1693.99,-1873.58 1693.99,-1909.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1887.88">
+    2001.Diaprepes_balloui
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_balloui -->
+  <g class="edge" id="edge55">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_balloui
+   </title>
+   <path d="M1389.35,-1317.08C1417.84,-1331.38 1449.86,-1352.88 1467.49,-1382.58 1494.22,-1427.62 1479.66,-1565.53 1485.49,-1617.58 1491.25,-1668.93 1495.3,-1681.42 1502.49,-1732.58 1506.71,-1762.55 1500.4,-1844.95 1520.49,-1867.58 1524.83,-1872.47 1530.02,-1876.43 1535.7,-1879.62" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1390.77,-1313.88 1380.25,-1312.69 1387.73,-1320.18 1390.77,-1313.88" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_maugei -->
+  <g class="node" id="node33">
+   <title>
+    2001.Diaprepes_maugei
+   </title>
+   <polygon fill="#ccccff" points="1696.99,-1807.58 1532.99,-1807.58 1532.99,-1771.58 1696.99,-1771.58 1696.99,-1807.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1785.88">
+    2001.Diaprepes_maugei
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_maugei -->
+  <g class="edge" id="edge45">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_maugei
+   </title>
+   <path d="M1387.13,-1317.06C1415.63,-1331.54 1448.37,-1353.21 1467.49,-1382.58 1495,-1424.84 1476.49,-1444.98 1485.49,-1494.58 1485.93,-1497 1519.48,-1665.35 1520.49,-1667.58 1539.27,-1708.88 1574.34,-1749.13 1595.79,-1771.51" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1388.57,-1313.86 1378.05,-1312.61 1385.49,-1320.15 1388.57,-1313.86" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_reticulatus -->
+  <g class="node" id="node34">
+   <title>
+    2001.Diaprepes_reticulatus
+   </title>
+   <polygon fill="#ccccff" points="1705.49,-753.584 1524.49,-753.584 1524.49,-717.584 1705.49,-717.584 1705.49,-753.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-731.884">
+    2001.Diaprepes_reticulatus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_reticulatus -->
+  <g class="edge" id="edge49">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_reticulatus
+   </title>
+   <path d="M1397.21,-1299.7C1422.75,-1298.04 1450.05,-1291.02 1467.49,-1271.58 1489.58,-1246.98 1480.87,-1007.32 1485.49,-974.584 1490.33,-940.311 1496.52,-932.676 1502.49,-898.584 1507.95,-867.47 1499.35,-781.051 1520.49,-757.584 1521.72,-756.221 1523.02,-754.934 1524.37,-753.72" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397.02,-1296.21 1387.17,-1300.1 1397.3,-1303.2 1397.02,-1296.21" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_variegatus -->
+  <g class="node" id="node35">
+   <title>
+    2001.Diaprepes_variegatus
+   </title>
+   <polygon fill="#ccccff" points="1705.99,-712.584 1523.99,-712.584 1523.99,-676.584 1705.99,-676.584 1705.99,-712.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-690.884">
+    2001.Diaprepes_variegatus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_variegatus -->
+  <g class="edge" id="edge53">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_variegatus
+   </title>
+   <path d="M1397.33,-1299.81C1422.89,-1298.16 1450.17,-1291.12 1467.49,-1271.58 1495.02,-1240.54 1479.94,-939.703 1485.49,-898.584 1490.12,-864.282 1495.82,-856.546 1502.49,-822.584 1511.71,-775.696 1487.78,-751.419 1520.49,-716.584 1521.75,-715.246 1523.07,-713.983 1524.45,-712.791" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397.13,-1296.31 1387.27,-1300.2 1397.4,-1303.31 1397.13,-1296.31" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_marginatus -->
+  <g class="node" id="node36">
+   <title>
+    2001.Diaprepes_marginatus
+   </title>
+   <polygon fill="#ccccff" points="1708.49,-1273.58 1521.49,-1273.58 1521.49,-1237.58 1708.49,-1237.58 1708.49,-1273.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1251.88">
+    2001.Diaprepes_marginatus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_marginatus -->
+  <g class="edge" id="edge46">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_marginatus
+   </title>
+   <path d="M1397.18,-1285.57C1434.03,-1280.47 1480.74,-1274.01 1521.35,-1268.4" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1396.48,-1282.13 1387.05,-1286.97 1397.44,-1289.07 1396.48,-1282.13" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_abbreviatus -->
+  <g class="node" id="node37">
+   <title>
+    2001.Diaprepes_abbreviatus
+   </title>
+   <polygon fill="#ccccff" points="1709.49,-1495.58 1520.49,-1495.58 1520.49,-1459.58 1709.49,-1459.58 1709.49,-1495.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1473.88">
+    2001.Diaprepes_abbreviatus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge42">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_abbreviatus
+   </title>
+   <path d="M1368.52,-1318.27C1425.57,-1355.3 1534.65,-1426.09 1585.98,-1459.4" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1370.12,-1315.14 1359.83,-1312.63 1366.31,-1321.01 1370.12,-1315.14" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_rohrii -->
+  <g class="node" id="node38">
+   <title>
+    2001.Diaprepes_rohrii
+   </title>
+   <polygon fill="#ccccff" points="1689.49,-560.584 1540.49,-560.584 1540.49,-524.584 1689.49,-524.584 1689.49,-560.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-538.884">
+    2001.Diaprepes_rohrii
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_rohrii -->
+  <g class="edge" id="edge47">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_rohrii
+   </title>
+   <path d="M1397.21,-1299.99C1422.88,-1298.4 1450.29,-1291.37 1467.49,-1271.58 1490.14,-1245.54 1476.57,-683.925 1485.49,-650.584 1493.98,-618.888 1496.58,-608.043 1520.49,-585.584 1531.57,-575.188 1545.59,-566.955 1559.39,-560.595" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1396.97,-1296.5 1387.1,-1300.35 1397.22,-1303.49 1396.97,-1296.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_excavatus -->
+  <g class="node" id="node39">
+   <title>
+    2001.Diaprepes_excavatus
+   </title>
+   <polygon fill="#ccccff" points="1704.99,-1091.58 1524.99,-1091.58 1524.99,-1055.58 1704.99,-1055.58 1704.99,-1091.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1069.88">
+    2001.Diaprepes_excavatus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_excavatus -->
+  <g class="edge" id="edge51">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_excavatus
+   </title>
+   <path d="M1397.28,-1297.41C1421.88,-1295.18 1448.47,-1288.37 1467.49,-1271.58 1482.8,-1258.07 1505.62,-1109.57 1520.49,-1095.58 1521.95,-1094.21 1523.48,-1092.92 1525.06,-1091.71" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397,-1293.92 1387.25,-1298.08 1397.46,-1300.9 1397,-1293.92" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_revestitus -->
+  <g class="node" id="node40">
+   <title>
+    2001.Diaprepes_revestitus
+   </title>
+   <polygon fill="#ccccff" points="1703.49,-630.584 1526.49,-630.584 1526.49,-594.584 1703.49,-594.584 1703.49,-630.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-608.884">
+    2001.Diaprepes_revestitus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_revestitus -->
+  <g class="edge" id="edge43">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_revestitus
+   </title>
+   <path d="M1397.18,-1299.96C1422.85,-1298.37 1450.25,-1291.34 1467.49,-1271.58 1487.89,-1248.21 1478.58,-743.82 1485.49,-713.584 1494.05,-676.146 1490.94,-659.1 1520.49,-634.584 1522.29,-633.093 1524.17,-631.7 1526.12,-630.398" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1396.94,-1296.47 1387.08,-1300.33 1397.19,-1303.47 1396.94,-1296.47" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_sommeri -->
+  <g class="node" id="node41">
+   <title>
+    2001.Diaprepes_sommeri
+   </title>
+   <polygon fill="#ccccff" points="1701.49,-940.584 1528.49,-940.584 1528.49,-904.584 1701.49,-904.584 1701.49,-940.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-918.884">
+    2001.Diaprepes_sommeri
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_sommeri -->
+  <g class="edge" id="edge50">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_sommeri
+   </title>
+   <path d="M1397.39,-1298.91C1422.53,-1297.02 1449.49,-1290.05 1467.49,-1271.58 1487.09,-1251.49 1478.83,-1173.84 1485.49,-1146.58 1496.68,-1100.84 1498.28,-1088.1 1520.49,-1046.58 1542.38,-1005.7 1577.06,-963.775 1597.47,-940.667" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1396.95,-1295.43 1387.13,-1299.42 1397.29,-1302.42 1396.95,-1295.43" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_glaucus -->
+  <g class="node" id="node42">
+   <title>
+    2001.Diaprepes_glaucus
+   </title>
+   <polygon fill="#ccccff" points="1697.99,-671.584 1531.99,-671.584 1531.99,-635.584 1697.99,-635.584 1697.99,-671.584" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-649.884">
+    2001.Diaprepes_glaucus
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_glaucus -->
+  <g class="edge" id="edge54">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_glaucus
+   </title>
+   <path d="M1397.41,-1299.88C1422.98,-1298.24 1450.25,-1291.2 1467.49,-1271.58 1484.12,-1252.67 1481.98,-843.524 1485.49,-818.584 1490.06,-786.187 1497.26,-698.613 1520.49,-675.584 1523.93,-672.179 1527.79,-669.264 1531.92,-666.771" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397.21,-1296.39 1387.35,-1300.27 1397.48,-1303.38 1397.21,-1296.39" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_doublierii -->
+  <g class="node" id="node43">
+   <title>
+    2001.Diaprepes_doublierii
+   </title>
+   <polygon fill="#ccccff" points="1701.49,-1362.58 1528.49,-1362.58 1528.49,-1326.58 1701.49,-1326.58 1701.49,-1362.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1614.99" y="-1340.88">
+    2001.Diaprepes_doublierii
+   </text>
+  </g>
+  <!-- 2001.Diaprepes&#45;&gt;2001.Diaprepes_doublierii -->
+  <g class="edge" id="edge44">
+   <title>
+    2001.Diaprepes-&gt;2001.Diaprepes_doublierii
+   </title>
+   <path d="M1397.22,-1306.15C1436.19,-1313.06 1486.15,-1321.92 1528.29,-1329.39" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="1397.51,-1302.64 1387.05,-1304.34 1396.29,-1309.53 1397.51,-1302.64" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2001.Diaprepes_balloui&#45;&gt;1999.Diaprepes_balloui -->
+  <g class="edge" id="edge79">
+   <title>
+    2001.Diaprepes_balloui-&gt;1999.Diaprepes_balloui
+   </title>
+   <path d="M1694.32,-1879.17C1711.53,-1874.54 1729.17,-1868.21 1744.49,-1859.58 1789.11,-1834.47 1828.54,-1787.76 1848.22,-1761.94" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1871.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_maugei&#45;&gt;1999.Diaprepes_maugei -->
+  <g class="edge" id="edge107">
+   <title>
+    2001.Diaprepes_maugei-&gt;1999.Diaprepes_maugei
+   </title>
+   <path d="M1637.34,-1771.27C1664.38,-1747.38 1711.44,-1703.42 1744.49,-1659.58 1754.32,-1646.55 1751.23,-1639.39 1762.49,-1627.58 1779.71,-1609.53 1803.24,-1594.52 1823.04,-1583.78" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1683.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_reticulatus&#45;&gt;1999.Diaprepes_reticulatus -->
+  <g class="edge" id="edge128">
+   <title>
+    2001.Diaprepes_reticulatus-&gt;1999.Diaprepes_reticulatus
+   </title>
+   <path d="M1705.73,-717.541C1707.05,-716.299 1708.31,-714.981 1709.49,-713.584 1746.59,-669.974 1685.62,-495.626 1727.49,-456.584 1756.48,-429.557 1804.44,-449.953 1834.44,-467.518" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-460.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_variegatus&#45;&gt;1999.Diaprepes_variegatus -->
+  <g class="edge" id="edge85">
+   <title>
+    2001.Diaprepes_variegatus-&gt;1999.Diaprepes_variegatus
+   </title>
+   <path d="M1705.75,-676.559C1707.06,-675.311 1708.31,-673.987 1709.49,-672.584 1753.2,-620.625 1678.09,-414.157 1727.49,-367.584 1756.33,-340.398 1804.34,-360.842 1834.38,-378.46" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-371.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_marginatus&#45;&gt;1999.Diaprepes_marginatus -->
+  <g class="edge" id="edge60">
+   <title>
+    2001.Diaprepes_marginatus-&gt;1999.Diaprepes_marginatus
+   </title>
+   <path d="M1629.51,-1237.18C1652.97,-1206.64 1704.33,-1145.79 1762.49,-1114.58 1765.13,-1113.17 1767.86,-1111.84 1770.64,-1110.6" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1139.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_abbreviatus&#45;&gt;1999.Diaprepes_spengleri -->
+  <g class="edge" id="edge125">
+   <title>
+    2001.Diaprepes_abbreviatus-&gt;1999.Diaprepes_spengleri
+   </title>
+   <path d="M1709.59,-1462.97C1721.5,-1460.07 1733.39,-1456.63 1744.49,-1452.58 1777.24,-1440.64 1811.78,-1420.38 1834.77,-1405.65" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1462.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_abbreviatus&#45;&gt;1999.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge77">
+   <title>
+    2001.Diaprepes_abbreviatus-&gt;1999.Diaprepes_abbreviatus
+   </title>
+   <path d="M1634.31,-1459.55C1654.28,-1439.29 1686.46,-1404.88 1709.49,-1371.58 1728.38,-1344.28 1734.57,-1337.27 1744.49,-1305.58 1754.53,-1273.55 1739.96,-1180.47 1762.49,-1155.58 1764.15,-1153.76 1765.92,-1152.06 1767.78,-1150.49" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1349.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_rohrii&#45;&gt;1999.Diaprepes_rohrii -->
+  <g class="edge" id="edge112">
+   <title>
+    2001.Diaprepes_rohrii-&gt;1999.Diaprepes_rohrii
+   </title>
+   <path d="M1617.68,-524.38C1625.16,-447.974 1658.12,-154.632 1727.49,-100.584 1758.1,-76.7393 1804.06,-95.0161 1833.41,-111.442" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-104.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_excavatus&#45;&gt;1999.Diaprepes_excavatus -->
+  <g class="edge" id="edge87">
+   <title>
+    2001.Diaprepes_excavatus-&gt;1999.Diaprepes_excavatus
+   </title>
+   <path d="M1651.08,-1055.37C1672.52,-1045.28 1700.85,-1033.76 1727.49,-1028.58 1741.88,-1025.79 1757.3,-1024.43 1772.38,-1023.97" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1032.38">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_revestitus&#45;&gt;1999.Diaprepes_revestitus -->
+  <g class="edge" id="edge97">
+   <title>
+    2001.Diaprepes_revestitus-&gt;1999.Diaprepes_revestitus
+   </title>
+   <path d="M1680.32,-594.401C1691.76,-588.314 1702.3,-580.248 1709.49,-569.584 1733.14,-534.543 1696.91,-218.757 1727.49,-189.584 1756.26,-162.149 1804.52,-182.849 1834.6,-200.558" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-193.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_sommeri&#45;&gt;1999.Diaprepes_sommeri -->
+  <g class="edge" id="edge71">
+   <title>
+    2001.Diaprepes_sommeri-&gt;1999.Diaprepes_sommeri
+   </title>
+   <path d="M1701.56,-930.993C1716.01,-933.24 1730.76,-936.059 1744.49,-939.584 1752.81,-941.717 1754.28,-944.09 1762.49,-946.584 1767.04,-947.965 1771.73,-949.299 1776.48,-950.582" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-943.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_glaucus&#45;&gt;1999.Diaprepes_glaucus -->
+  <g class="edge" id="edge76">
+   <title>
+    2001.Diaprepes_glaucus-&gt;1999.Diaprepes_glaucus
+   </title>
+   <path d="M1698.04,-641.672C1702.3,-638.884 1706.18,-635.553 1709.49,-631.584 1734.65,-601.428 1699.03,-305.637 1727.49,-278.584 1756.31,-251.201 1804.55,-271.885 1834.62,-289.577" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-282.384">
+    ==
+   </text>
+  </g>
+  <!-- 2001.Diaprepes_doublierii&#45;&gt;1999.Diaprepes_doublierii -->
+  <g class="edge" id="edge111">
+   <title>
+    2001.Diaprepes_doublierii-&gt;1999.Diaprepes_doublierii
+   </title>
+   <path d="M1651.69,-1326.55C1698.24,-1303.04 1779.19,-1262.16 1825.75,-1238.64" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1735.99" y="-1290.38">
+    ==
+   </text>
+  </g>
+  <!-- 1982.Diaprepes_rufescens&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge18">
+   <title>
+    1982.Diaprepes_rufescens-&gt;1982.Diaprepes
+   </title>
+   <path d="M2152.97,-1579.5C2174.44,-1566.98 2200.29,-1548.32 2215.49,-1524.58 2302.96,-1388.09 2309.24,-1183.89 2308.35,-1109.23" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2311.84,-1108.72 2308.17,-1098.78 2304.84,-1108.84 2311.84,-1108.72" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_sommeri&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge15">
+   <title>
+    1982.Diaprepes_sommeri-&gt;1982.Diaprepes
+   </title>
+   <path d="M2202.12,-1001.99C2206.72,-1003.68 2211.2,-1005.54 2215.49,-1007.58 2240.55,-1019.53 2264.98,-1039.41 2282.36,-1055.42" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2280.15,-1058.14 2289.82,-1062.45 2284.95,-1053.05 2280.15,-1058.14" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_balloui&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge6">
+   <title>
+    1982.Diaprepes_balloui-&gt;1982.Diaprepes
+   </title>
+   <path d="M2160.96,-1669.47C2180.69,-1659.18 2202.37,-1644.36 2215.49,-1624.58 2272.92,-1538.04 2299.07,-1207.72 2305.73,-1108.76" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2309.23,-1108.84 2306.39,-1098.63 2302.24,-1108.38 2309.23,-1108.84" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_maugei&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge12">
+   <title>
+    1982.Diaprepes_maugei-&gt;1982.Diaprepes
+   </title>
+   <path d="M2156.95,-1479.4C2177.31,-1468.31 2200.74,-1452.27 2215.49,-1431.58 2288.63,-1329.04 2303.64,-1172.58 2306.71,-1108.96" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2310.21,-1109.02 2307.13,-1098.88 2303.22,-1108.73 2310.21,-1109.02" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_spengleri&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge4">
+   <title>
+    1982.Diaprepes_spengleri-&gt;1982.Diaprepes
+   </title>
+   <path d="M2141.88,-1288.37C2163.02,-1272.45 2193.17,-1247.98 2215.49,-1222.58 2247.52,-1186.15 2276.51,-1137.64 2293.05,-1107.79" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2296.24,-1109.24 2297.97,-1098.79 2290.1,-1105.88 2296.24,-1109.24" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_boxi&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge9">
+   <title>
+    1982.Diaprepes_boxi-&gt;1982.Diaprepes
+   </title>
+   <path d="M2151.8,-1386.41C2172.83,-1374.01 2198.63,-1355.83 2215.49,-1333.58 2268.9,-1263.15 2293.61,-1158.7 2302.87,-1108.94" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2306.35,-1109.36 2304.67,-1098.9 2299.46,-1108.13 2306.35,-1109.36" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_pulverulentus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge8">
+   <title>
+    1982.Diaprepes_pulverulentus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2153.29,-1770.34C2174.88,-1757.68 2200.74,-1738.76 2215.49,-1714.58 2279.12,-1610.28 2301.3,-1218.04 2306.31,-1108.91" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2309.81,-1108.84 2306.76,-1098.69 2302.82,-1108.53 2309.81,-1108.84" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_abbreviatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge13">
+   <title>
+    1982.Diaprepes_abbreviatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2198.66,-1108.57C2204.36,-1107.24 2210.02,-1105.91 2215.49,-1104.58 2224.21,-1102.48 2233.38,-1100.18 2242.4,-1097.88" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2243.3,-1101.26 2252.12,-1095.38 2241.56,-1094.48 2243.3,-1101.26" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_marginatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge5">
+   <title>
+    1982.Diaprepes_marginatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2209.2,-1080.58C2220.36,-1080.58 2231.58,-1080.58 2242.23,-1080.58" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2242.26,-1084.08 2252.26,-1080.58 2242.26,-1077.08 2242.26,-1084.08" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_doublierii&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge17">
+   <title>
+    1982.Diaprepes_doublierii-&gt;1982.Diaprepes
+   </title>
+   <path d="M2166.36,-1177.49C2182.49,-1170.85 2200.16,-1162.69 2215.49,-1153.58 2238.75,-1139.77 2262.62,-1120.66 2280.21,-1105.46" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2282.61,-1108.01 2287.82,-1098.79 2278,-1102.75 2282.61,-1108.01" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_reticulatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge2">
+   <title>
+    1982.Diaprepes_reticulatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2134.82,-654.853C2156.94,-677.86 2193.83,-719.493 2215.49,-761.584 2267.04,-861.729 2293.5,-994.852 2303.13,-1052.26" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2299.72,-1053.08 2304.79,-1062.39 2306.63,-1051.95 2299.72,-1053.08" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_excavatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge3">
+   <title>
+    1982.Diaprepes_excavatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2198.66,-1052.6C2204.36,-1053.93 2210.02,-1055.26 2215.49,-1056.58 2224.21,-1058.69 2233.38,-1060.98 2242.4,-1063.29" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2241.56,-1066.68 2252.12,-1065.79 2243.3,-1059.91 2241.56,-1066.68" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_albofasciatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge10">
+   <title>
+    1982.Diaprepes_albofasciatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2128.84,-1984.42C2150.2,-1952.04 2193.84,-1881.55 2215.49,-1815.58 2302.27,-1551.18 2308.08,-1208.62 2307.8,-1108.94" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2311.3,-1108.75 2307.75,-1098.77 2304.3,-1108.79 2311.3,-1108.75" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_rohrii&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge19">
+   <title>
+    1982.Diaprepes_rohrii-&gt;1982.Diaprepes
+   </title>
+   <path d="M2147.01,-238.591C2169.93,-253.877 2199.94,-278.016 2215.49,-307.584 2285.72,-441.112 2303.43,-929.669 2306.81,-1052.44" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2303.31,-1052.64 2307.08,-1062.54 2310.31,-1052.45 2303.31,-1052.64" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_variegatus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge1">
+   <title>
+    1982.Diaprepes_variegatus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2147.34,-543.669C2169.81,-558.501 2199.08,-581.579 2215.49,-609.584 2302.81,-758.602 2309.04,-975.133 2308.25,-1052.12" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2304.75,-1052.39 2308.09,-1062.44 2311.75,-1052.49 2304.75,-1052.39" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_glaucus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge11">
+   <title>
+    1982.Diaprepes_glaucus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2183.35,-473.634C2195.63,-479.736 2207.18,-487.842 2215.49,-498.584 2283.92,-586.954 2302.56,-948.507 2306.56,-1052.49" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2303.06,-1052.67 2306.93,-1062.54 2310.06,-1052.42 2303.06,-1052.67" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_viridans&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge7">
+   <title>
+    1982.Diaprepes_viridans-&gt;1982.Diaprepes
+   </title>
+   <path d="M785.787,-495.397C828.428,-404.368 1033.43,-2.58351 1330.02,-2.58351 1330.02,-2.58351 1330.02,-2.58351 2116.49,-2.58351 2161.77,-2.58351 2185.98,7.75053 2215.49,-26.5835 2284.26,-106.587 2303.7,-891.828 2306.96,-1052.11" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2303.47,-1052.62 2307.17,-1062.55 2310.47,-1052.48 2303.47,-1052.62" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_revestitus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge16">
+   <title>
+    1982.Diaprepes_revestitus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2143.71,-352.855C2166.59,-369.738 2198.27,-396.944 2215.49,-428.584 2275.67,-539.105 2300.39,-941.778 2306.13,-1052.34" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2302.64,-1052.58 2306.64,-1062.39 2309.63,-1052.22 2302.64,-1052.58" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 1982.Diaprepes_famelicus&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge14">
+   <title>
+    1982.Diaprepes_famelicus-&gt;1982.Diaprepes
+   </title>
+   <path d="M2128.44,-806.849C2161,-856.626 2251.42,-994.851 2289.85,-1053.6" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="2287.15,-1055.87 2295.55,-1062.32 2293.01,-1052.04 2287.15,-1055.87" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.nc_Diaprepes -->
+  <g class="node" id="node64">
+   <title>
+    2012.nc_Diaprepes
+   </title>
+   <polygon fill="#ffffcc" points="870.579,-1118.13 870.579,-1133.04 815.494,-1143.58 737.591,-1143.58 682.506,-1133.04 682.506,-1118.13 737.591,-1107.58 815.494,-1107.58 870.579,-1118.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="776.542" y="-1121.88">
+    2012.nc_Diaprepes
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_rufescens -->
+  <g class="edge" id="edge110">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_rufescens
+   </title>
+   <path d="M777.404,-1143.68C777.876,-1214.62 789.271,-1476.54 927.502,-1614.58 1009.39,-1696.36 1101.16,-1602.78 1176.54,-1690.58 1212.81,-1732.84 1158.74,-1771.92 1194.54,-1814.58 1282.07,-1918.9 1351.05,-1888.98 1485.49,-1910.58 1492.95,-1911.78 1496.25,-1914.84 1502.49,-1910.58 1520.63,-1898.21 1504.05,-1879.13 1520.49,-1864.58 1522.88,-1862.47 1525.42,-1860.54 1528.09,-1858.78" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1911.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_boxi -->
+  <g class="edge" id="edge106">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_boxi
+   </title>
+   <path d="M789.368,-1143.7C813.467,-1180.1 870.792,-1264.04 927.502,-1327.58 1028.43,-1440.67 1082.13,-1442 1176.54,-1560.58 1186.46,-1573.05 1181.06,-1583.09 1194.54,-1591.58 1246.01,-1624.04 1407.16,-1605.61 1467.49,-1613.58 1492.11,-1616.84 1518.86,-1621.44 1542.69,-1625.94" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1617.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes -->
+  <g class="edge" id="edge66">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes
+   </title>
+   <path d="M790.264,-1143.94C813.371,-1175.57 865.615,-1239.54 927.502,-1266.58 1042.88,-1317.01 1194.68,-1310.43 1274.87,-1302.03" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1052.02" y="-1312.38">
+    &lt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_reticulatus -->
+  <g class="edge" id="edge117">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_reticulatus
+   </title>
+   <path d="M795.8,-1107.19C822.531,-1081.2 874.882,-1033.75 927.502,-1005.58 942.28,-997.673 1490.87,-834.659 1502.49,-822.584 1523.28,-800.989 1498.89,-778.362 1520.49,-757.584 1521.94,-756.196 1523.45,-754.891 1525.02,-753.663" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-925.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_variegatus -->
+  <g class="edge" id="edge90">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_variegatus
+   </title>
+   <path d="M786.852,-1107.32C807.312,-1068.85 859.813,-978.716 927.502,-926.584 1029.06,-848.366 1070.34,-849.337 1194.54,-817.584 1312.83,-787.34 1361.41,-847.028 1467.49,-786.584 1501.4,-767.265 1487.79,-737.868 1520.49,-716.584 1522.59,-715.219 1524.76,-713.939 1526.99,-712.738" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-821.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_marginatus -->
+  <g class="edge" id="edge95">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_marginatus
+   </title>
+   <path d="M847.786,-1137.43C974.866,-1158.73 1251.49,-1204.44 1485.49,-1238.58 1497.07,-1240.27 1509.25,-1241.98 1521.3,-1243.62" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1239.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_excavatus -->
+  <g class="edge" id="edge99">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_excavatus
+   </title>
+   <path d="M870.652,-1122.43C1008.76,-1117.34 1275.97,-1105.86 1502.49,-1086.58 1509.78,-1085.96 1517.32,-1085.25 1524.89,-1084.47" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1111.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_revestitus -->
+  <g class="edge" id="edge63">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_revestitus
+   </title>
+   <path d="M794.467,-1107.41C823.666,-1074.84 882.927,-1003.13 909.502,-930.584 922.342,-895.535 901.365,-790.23 927.502,-763.584 1011.28,-678.173 1075.47,-741.298 1194.54,-729.584 1224.79,-726.607 1443.75,-729.568 1467.49,-710.584 1489.24,-693.199 1467.2,-671.574 1485.49,-650.584 1496.27,-638.218 1510.85,-629.781 1526.33,-624.047" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-733.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_sommeri -->
+  <g class="edge" id="edge132">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_sommeri
+   </title>
+   <path d="M826.729,-1109.66C941.061,-1073.27 1234.15,-983.543 1485.49,-936.584 1499.28,-934.008 1514,-931.855 1528.36,-930.073" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1005.38">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.nc_Diaprepes&#45;&gt;2001.Diaprepes_glaucus -->
+  <g class="edge" id="edge126">
+   <title>
+    2012.nc_Diaprepes-&gt;2001.Diaprepes_glaucus
+   </title>
+   <path d="M793.844,-1107.52C822.348,-1074.84 880.925,-1002.58 909.502,-930.584 927.94,-884.131 892.725,-855.476 927.502,-819.584 1011.64,-732.747 1074.66,-783.367 1194.54,-767.584 1224.68,-763.615 1442.11,-765.311 1467.49,-748.584 1482.1,-738.959 1475.48,-727.924 1485.49,-713.584 1498.64,-694.759 1500.67,-687.167 1520.49,-675.584 1524.09,-673.48 1527.88,-671.578 1531.79,-669.858" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-771.384">
+    &gt;
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_famelicus -->
+  <g class="node" id="node65">
+   <title>
+    2012.Diaprepes_famelicus
+   </title>
+   <polygon fill="#ffffcc" points="1176.56,-679.128 1176.56,-694.039 1103.61,-704.584 1000.44,-704.584 927.484,-694.039 927.484,-679.128 1000.44,-668.584 1103.61,-668.584 1176.56,-679.128" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1052.02" y="-682.884">
+    2012.Diaprepes_famelicus
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_famelicus&#45;&gt;2001.Diaprepes_famelicus -->
+  <g class="edge" id="edge108">
+   <title>
+    2012.Diaprepes_famelicus-&gt;2001.Diaprepes_famelicus
+   </title>
+   <path d="M1174,-678.721C1277.37,-673.904 1417.13,-672.465 1467.49,-695.584 1499.53,-710.288 1490.17,-736.612 1520.49,-754.584 1522.79,-755.944 1525.16,-757.22 1527.6,-758.417" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-699.384">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_comma -->
+  <g class="node" id="node66">
+   <title>
+    2012.Diaprepes_comma
+   </title>
+   <polygon fill="#ffffcc" points="1168.17,-1710.13 1168.17,-1725.04 1100.13,-1735.58 1003.91,-1735.58 935.868,-1725.04 935.868,-1710.13 1003.91,-1699.58 1100.13,-1699.58 1168.17,-1710.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1052.02" y="-1713.88">
+    2012.Diaprepes_comma
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_comma&#45;&gt;2001.Diaprepes_comma -->
+  <g class="edge" id="edge91">
+   <title>
+    2012.Diaprepes_comma-&gt;2001.Diaprepes_comma
+   </title>
+   <path d="M1124.62,-1703.34C1207.31,-1686.78 1347.39,-1658.42 1467.49,-1632.58 1489.54,-1627.84 1513.42,-1622.53 1535.36,-1617.59" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1692.38">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_rohrii -->
+  <g class="node" id="node67">
+   <title>
+    2012.Diaprepes_rohrii
+   </title>
+   <polygon fill="#ffffcc" points="1156.66,-561.128 1156.66,-576.039 1095.36,-586.584 1008.68,-586.584 947.38,-576.039 947.38,-561.128 1008.68,-550.584 1095.36,-550.584 1156.66,-561.128" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1052.02" y="-564.884">
+    2012.Diaprepes_rohrii
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_rohrii&#45;&gt;2001.Diaprepes_rohrii -->
+  <g class="edge" id="edge98">
+   <title>
+    2012.Diaprepes_rohrii-&gt;2001.Diaprepes_rohrii
+   </title>
+   <path d="M1156.89,-563.769C1268.22,-558.609 1442.13,-550.549 1540.22,-546.003" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-566.384">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;1999.Diaprepes_albofasciatus -->
+  <g class="edge" id="edge113">
+   <title>
+    2012.Diaprepes-&gt;1999.Diaprepes_albofasciatus
+   </title>
+   <path d="M524.653,-1689.76C525.327,-1747.6 536.264,-1927.83 643.582,-2000.58 748.404,-2071.64 801.099,-2016.9 927.502,-2024.58 957.467,-2026.4 1440.72,-2031.01 1467.49,-2044.58 1501.36,-2061.75 1486.64,-2094.39 1520.49,-2111.58 1595.51,-2149.67 1692.22,-2149.5 1763.48,-2141.8" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-2048.38">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;1999.Diaprepes_pulverulentus -->
+  <g class="edge" id="edge121">
+   <title>
+    2012.Diaprepes-&gt;1999.Diaprepes_pulverulentus
+   </title>
+   <path d="M527.121,-1689.68C534.527,-1739.95 562.047,-1882.71 643.582,-1961.58 688.549,-2005.08 712.981,-2010.58 775.542,-2010.58 775.542,-2010.58 775.542,-2010.58 1615.99,-2010.58 1673.03,-2010.58 1736.66,-2000.44 1784.84,-1990.64" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-2014.38">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;1982.Diaprepes_viridans -->
+  <g class="edge" id="edge94">
+   <title>
+    2012.Diaprepes-&gt;1982.Diaprepes_viridans
+   </title>
+   <path d="M525.234,-1653.32C528.683,-1517.2 552.925,-663.662 620.582,-573.584 638.081,-550.286 665.893,-536.032 693.156,-527.312" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="623.082" y="-577.384">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.nc_Diaprepes -->
+  <g class="edge" id="edge143">
+   <title>
+    2012.Diaprepes-&gt;2012.nc_Diaprepes
+   </title>
+   <path d="M537.321,-1644.3C581.627,-1547.83 730.216,-1224.28 767.168,-1143.82" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="534.127,-1642.87 533.134,-1653.42 540.488,-1645.79 534.127,-1642.87" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_famelicus -->
+  <g class="edge" id="edge137">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_famelicus
+   </title>
+   <path d="M526.318,-1643.37C531.842,-1557.7 555.386,-1294.47 643.582,-1098.58 730.134,-906.346 752.474,-836.106 927.502,-718.584 939.549,-710.495 953.516,-704.451 967.634,-699.934" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="522.824,-1643.17 525.705,-1653.37 529.811,-1643.6 522.824,-1643.17" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_comma -->
+  <g class="edge" id="edge139">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_comma
+   </title>
+   <path d="M585.381,-1687.53C603.933,-1691.82 624.486,-1695.99 643.582,-1698.58 741.642,-1711.91 854.059,-1716.35 935.936,-1717.63" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="586.129,-1684.11 575.592,-1685.21 584.516,-1690.92 586.129,-1684.11" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_rohrii -->
+  <g class="edge" id="edge138">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_rohrii
+   </title>
+   <path d="M525.324,-1643.2C528.585,-1483.57 548.188,-702.124 620.582,-626.584 714.233,-528.863 888.175,-539.665 983.769,-554.847" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="521.824,-1643.13 525.124,-1653.2 528.823,-1643.27 521.824,-1643.13" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_marginicollis -->
+  <g class="node" id="node69">
+   <title>
+    2012.Diaprepes_marginicollis
+   </title>
+   <polygon fill="#ffffcc" points="1467.47,-633.128 1467.47,-648.039 1387.54,-658.584 1274.49,-658.584 1194.56,-648.039 1194.56,-633.128 1274.49,-622.584 1387.54,-622.584 1467.47,-633.128" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-636.884">
+    2012.Diaprepes_marginicollis
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_marginicollis -->
+  <g class="edge" id="edge141">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_marginicollis
+   </title>
+   <path d="M526.467,-1643.33C535.577,-1493.89 581.039,-799.858 643.582,-729.584 800.67,-553.079 1121.4,-595.205 1261.72,-624.241" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="522.962,-1643.31 525.852,-1653.5 529.949,-1643.73 522.962,-1643.31" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_doublierii -->
+  <g class="node" id="node70">
+   <title>
+    2012.Diaprepes_doublierii
+   </title>
+   <polygon fill="#ffffcc" points="1173.93,-1580.13 1173.93,-1595.04 1102.52,-1605.58 1001.52,-1605.58 930.112,-1595.04 930.112,-1580.13 1001.52,-1569.58 1102.52,-1569.58 1173.93,-1580.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1052.02" y="-1583.88">
+    2012.Diaprepes_doublierii
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_doublierii -->
+  <g class="edge" id="edge136">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_doublierii
+   </title>
+   <path d="M587.884,-1656.2C605.82,-1652.11 625.415,-1647.91 643.582,-1644.58 749.491,-1625.18 871.953,-1608.86 954.747,-1598.72" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="587.067,-1652.8 578.11,-1658.46 588.641,-1659.62 587.067,-1652.8" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_maugei -->
+  <g class="node" id="node71">
+   <title>
+    2012.Diaprepes_maugei
+   </title>
+   <polygon fill="#ffffcc" points="1446.26,-1780.13 1446.26,-1795.04 1378.75,-1805.58 1283.28,-1805.58 1215.77,-1795.04 1215.77,-1780.13 1283.28,-1769.58 1378.75,-1769.58 1446.26,-1780.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1783.88">
+    2012.Diaprepes_maugei
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_maugei -->
+  <g class="edge" id="edge142">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_maugei
+   </title>
+   <path d="M567.24,-1693.63C589.408,-1704.15 617.324,-1715.88 643.582,-1722.58 840.322,-1772.81 1077.71,-1785.02 1215.51,-1787.53" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="568.639,-1690.42 558.113,-1689.22 565.59,-1696.72 568.639,-1690.42" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_abbreviatus -->
+  <g class="node" id="node72">
+   <title>
+    2012.Diaprepes_abbreviatus
+   </title>
+   <polygon fill="#ffffcc" points="909.463,-1664.13 909.463,-1679.04 831.6,-1689.58 721.485,-1689.58 643.622,-1679.04 643.622,-1664.13 721.485,-1653.58 831.6,-1653.58 909.463,-1664.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="776.542" y="-1667.88">
+    2012.Diaprepes_abbreviatus
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge140">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_abbreviatus
+   </title>
+   <path d="M612.687,-1671.58C622.679,-1671.58 633.021,-1671.58 643.425,-1671.58" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="612.413,-1668.08 602.413,-1671.58 612.413,-1675.08 612.413,-1668.08" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_balloui -->
+  <g class="node" id="node73">
+   <title>
+    2012.Diaprepes_balloui
+   </title>
+   <polygon fill="#ffffcc" points="887.846,-1927.13 887.846,-1942.04 822.646,-1952.58 730.439,-1952.58 665.239,-1942.04 665.239,-1927.13 730.439,-1916.58 822.646,-1916.58 887.846,-1927.13" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="776.542" y="-1930.88">
+    2012.Diaprepes_balloui
+   </text>
+  </g>
+  <!-- 2012.Diaprepes&#45;&gt;2012.Diaprepes_balloui -->
+  <g class="edge" id="edge135">
+   <title>
+    2012.Diaprepes-&gt;2012.Diaprepes_balloui
+   </title>
+   <path d="M542.876,-1698.09C561.201,-1724.21 590.992,-1764.73 620.582,-1796.58 663.855,-1843.17 721.119,-1891.12 752.511,-1916.4" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="545.703,-1696.03 537.118,-1689.82 539.958,-1700.03 545.703,-1696.03" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- 2012.Diaprepes_marginicollis&#45;&gt;1999.Diaprepes -->
+  <g class="edge" id="edge82">
+   <title>
+    2012.Diaprepes_marginicollis-&gt;1999.Diaprepes
+   </title>
+   <path d="M1438.32,-651.941C1449.33,-656.9 1459.42,-663.597 1467.49,-672.584 1593.27,-812.511 1394.66,-952.71 1520.49,-1092.58 1530.31,-1103.49 1544.42,-1109.5 1558.72,-1112.69" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1493.99" y="-1071.38">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_marginicollis&#45;&gt;1982.Diaprepes -->
+  <g class="edge" id="edge116">
+   <title>
+    2012.Diaprepes_marginicollis-&gt;1982.Diaprepes
+   </title>
+   <path d="M1400.14,-624.241C1424.43,-615.301 1450.06,-601.777 1467.49,-581.584 1630.3,-393.04 1364.89,-40.5835 1613.99,-40.5835 1613.99,-40.5835 1613.99,-40.5835 2116.49,-40.5835 2197.49,-40.5835 2187.89,-117.438 2215.49,-193.584 2276.56,-362.06 2302.42,-951.178 2306.81,-1062.4" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1862.49" y="-44.3835">
+    !
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_doublierii&#45;&gt;2001.Diaprepes_doublierii -->
+  <g class="edge" id="edge92">
+   <title>
+    2012.Diaprepes_doublierii-&gt;2001.Diaprepes_doublierii
+   </title>
+   <path d="M1094.73,-1569.52C1198.71,-1524.48 1468.53,-1407.6 1572.39,-1362.6" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1530.38">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_maugei&#45;&gt;2001.Diaprepes_maugei -->
+  <g class="edge" id="edge70">
+   <title>
+    2012.Diaprepes_maugei-&gt;2001.Diaprepes_maugei
+   </title>
+   <path d="M1446.3,-1788.39C1475.31,-1788.6 1505.88,-1788.82 1532.86,-1789.01" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1493.99" y="-1793.38">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_abbreviatus&#45;&gt;2001.Diaprepes_abbreviatus -->
+  <g class="edge" id="edge72">
+   <title>
+    2012.Diaprepes_abbreviatus-&gt;2001.Diaprepes_abbreviatus
+   </title>
+   <path d="M884.4,-1682.45C971.217,-1685.6 1092.61,-1676.44 1176.54,-1614.58 1191.58,-1603.5 1179.38,-1587.51 1194.54,-1576.58 1244.11,-1540.87 1408.64,-1559.99 1467.49,-1543.58 1508.47,-1532.16 1552.62,-1510.93 1581.61,-1495.62" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1580.38">
+    ==
+   </text>
+  </g>
+  <!-- 2012.Diaprepes_balloui&#45;&gt;2001.Diaprepes_balloui -->
+  <g class="edge" id="edge101">
+   <title>
+    2012.Diaprepes_balloui-&gt;2001.Diaprepes_balloui
+   </title>
+   <path d="M887.905,-1935.4C1027.18,-1936.39 1274.09,-1937.99 1485.49,-1938.58 1493.05,-1938.6 1495.1,-1940.15 1502.49,-1938.58 1511.06,-1936.77 1512.45,-1934.05 1520.49,-1930.58 1536.65,-1923.63 1554.45,-1916.15 1570.14,-1909.63" fill="none" stroke="#aa00ff" stroke-dasharray="5,2">
+   </path>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="1331.02" y="-1942.38">
+    ==
+   </text>
+  </g>
+  <!-- Legend -->
+  <g class="node" id="node74">
+   <title>
+    Legend
+   </title>
+   <polygon fill="white" points="91,-2249.08 0,-2249.08 0,-1924.08 91,-1924.08 91,-2249.08" stroke="black">
+   </polygon>
+   <polygon fill="none" points="0.5,-2223.58 0.5,-2248.58 91.5,-2248.58 91.5,-2223.58 0.5,-2223.58" stroke="black">
+   </polygon>
+   <text font-family="Arial Black" font-size="14.00" text-anchor="start" x="23" y="-2232.38">
+    Nodes
+   </text>
+   <polygon fill="#ffcccc" points="0.5,-2198.58 0.5,-2223.58 65.5,-2223.58 65.5,-2198.58 0.5,-2198.58" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-2198.58 0.5,-2223.58 65.5,-2223.58 65.5,-2198.58 0.5,-2198.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-2207.38">
+    1999
+   </text>
+   <polygon fill="none" points="65.5,-2198.58 65.5,-2223.58 91.5,-2223.58 91.5,-2198.58 65.5,-2198.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2207.38">
+    23
+   </text>
+   <polygon fill="#ccffcc" points="0.5,-2173.58 0.5,-2198.58 65.5,-2198.58 65.5,-2173.58 0.5,-2173.58" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-2173.58 0.5,-2198.58 65.5,-2198.58 65.5,-2173.58 0.5,-2173.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-2182.38">
+    2016
+   </text>
+   <polygon fill="none" points="65.5,-2173.58 65.5,-2198.58 91.5,-2198.58 91.5,-2173.58 65.5,-2173.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="74.5" y="-2182.38">
+    3
+   </text>
+   <polygon fill="#ccccff" points="0.5,-2148.58 0.5,-2173.58 65.5,-2173.58 65.5,-2148.58 0.5,-2148.58" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-2148.58 0.5,-2173.58 65.5,-2173.58 65.5,-2148.58 0.5,-2148.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-2157.38">
+    2001
+   </text>
+   <polygon fill="none" points="65.5,-2148.58 65.5,-2173.58 91.5,-2173.58 91.5,-2148.58 65.5,-2148.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2157.38">
+    17
+   </text>
+   <polygon fill="#ccffff" points="0.5,-2123.58 0.5,-2148.58 65.5,-2148.58 65.5,-2123.58 0.5,-2123.58" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-2123.58 0.5,-2148.58 65.5,-2148.58 65.5,-2123.58 0.5,-2123.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-2132.38">
+    1982
+   </text>
+   <polygon fill="none" points="65.5,-2123.58 65.5,-2148.58 91.5,-2148.58 91.5,-2123.58 65.5,-2123.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2132.38">
+    20
+   </text>
+   <polygon fill="#ffffcc" points="0.5,-2098.58 0.5,-2123.58 65.5,-2123.58 65.5,-2098.58 0.5,-2098.58" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-2098.58 0.5,-2123.58 65.5,-2123.58 65.5,-2098.58 0.5,-2098.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-2107.38">
+    2012
+   </text>
+   <polygon fill="none" points="65.5,-2098.58 65.5,-2123.58 91.5,-2123.58 91.5,-2098.58 65.5,-2098.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2107.38">
+    10
+   </text>
+   <polygon fill="none" points="0.5,-2073.58 0.5,-2098.58 91.5,-2098.58 91.5,-2073.58 0.5,-2073.58" stroke="black">
+   </polygon>
+   <text font-family="Arial Black" font-size="14.00" text-anchor="start" x="21.5" y="-2082.38">
+    Edges
+   </text>
+   <polygon fill="none" points="0.5,-2048.58 0.5,-2073.58 65.5,-2073.58 65.5,-2048.58 0.5,-2048.58" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-2057.38">
+    isa_1982
+   </text>
+   <polygon fill="none" points="65.5,-2048.58 65.5,-2073.58 91.5,-2073.58 91.5,-2048.58 65.5,-2048.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2057.38">
+    19
+   </text>
+   <polygon fill="none" points="0.5,-2023.58 0.5,-2048.58 65.5,-2048.58 65.5,-2023.58 0.5,-2023.58" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-2032.38">
+    isa_1999
+   </text>
+   <polygon fill="none" points="65.5,-2023.58 65.5,-2048.58 91.5,-2048.58 91.5,-2023.58 65.5,-2023.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2032.38">
+    22
+   </text>
+   <polygon fill="none" points="0.5,-1998.58 0.5,-2023.58 65.5,-2023.58 65.5,-1998.58 0.5,-1998.58" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-2007.38">
+    isa_2001
+   </text>
+   <polygon fill="none" points="65.5,-1998.58 65.5,-2023.58 91.5,-2023.58 91.5,-1998.58 65.5,-1998.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-2007.38">
+    16
+   </text>
+   <polygon fill="none" points="0.5,-1973.58 0.5,-1998.58 65.5,-1998.58 65.5,-1973.58 0.5,-1973.58" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-1982.38">
+    isa_2016
+   </text>
+   <polygon fill="none" points="65.5,-1973.58 65.5,-1998.58 91.5,-1998.58 91.5,-1973.58 65.5,-1973.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="74.5" y="-1982.38">
+    2
+   </text>
+   <polygon fill="none" points="0.5,-1948.58 0.5,-1973.58 65.5,-1973.58 65.5,-1948.58 0.5,-1948.58" stroke="black">
+   </polygon>
+   <text fill="#aa00ff" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="22" y="-1957.38">
+    Art.
+   </text>
+   <polygon fill="none" points="65.5,-1948.58 65.5,-1973.58 91.5,-1973.58 91.5,-1948.58 65.5,-1948.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="70.5" y="-1957.38">
+    75
+   </text>
+   <polygon fill="none" points="0.5,-1923.58 0.5,-1948.58 65.5,-1948.58 65.5,-1923.58 0.5,-1923.58" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-1932.38">
+    isa_2012
+   </text>
+   <polygon fill="none" points="65.5,-1923.58 65.5,-1948.58 91.5,-1948.58 91.5,-1923.58 65.5,-1923.58" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="74.5" y="-1932.38">
+    9
+   </text>
+  </g>
+ </g>
+</svg>
+    </div>
+    <div class="tab-pane fade" id="adjacency1x1">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+    </div>
+    <div class="tab-pane fade" id="adjacency">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+    </div>
+   </div>
+  </div>
+  <script id="visualization">
+   createVisualization();
+function createVisualization() {
+	var size = {
+	  width: document.body.clientWidth || window.innerWidth,
+	  height: document.body.clientHeight || window.innerHeight
+	}
+
+	var oldSvg = d3.select("div#visualization svg")
+	var graphG = d3.select("div#visualization svg g.graph");
+	oldSvg.remove();
+
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+		width = size['width'] - margin.left - margin.right,
+		height = size['height'] - 1 - margin.top - margin.bottom;
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	var zoom = d3.behavior.zoom()
+		.x(x)
+		.y(y)
+		.scaleExtent([0.1, 32])
+		.on("zoom", zoom);
+
+	var svg = d3.select("#visualization").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.call(zoom)
+		.append(function() {
+			return graphG.node();
+		});
+
+	function zoom() {
+		x = d3.event.translate[0]
+		y = d3.event.translate[1]
+		graphG.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+	}
+
+
+	d3.select("div#visualization button#reset").on("click", reset);
+	d3.select("div#visualization button#zoomin").on("click", zoomIn);
+	d3.select("div#visualization button#zoomout").on("click", zoomOut);
+
+	var originalWidth = Number(oldSvg.attr("width").slice(0, -2));
+	var originalHeight = Number(oldSvg.attr("width").slice(0, -2));
+	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+	var t = d3.transform(graphG.attr("transform")),
+			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+			initialY = size['height'] * 0.8, //t.translate[1],
+			initialS = initialScale; //t.scale[0];
+			
+	function zoomIn() {
+		var t = d3.transform(graphG.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s + 0.1);
+		zoom.scale(newScale)
+		graphG.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function zoomOut() {
+		var t = d3.transform(graphG.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s - 0.1);
+		zoom.scale(newScale)
+		graphG.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function reset() {
+		initialTranslate = [initialX, initialY];
+		zoom.translate(initialTranslate);
+		zoom.scale(initialS)
+		graphG.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+	}
+
+	reset(); //removes the random jump after first click issue
+}
+  </script>
+  <script id="adjacency1x1">
+   createAdjacency1x1Matrix();
+  function createAdjacency1x1Matrix() {
+  	var size = {
+  	  width: document.body.clientWidth || window.innerWidth,
+  	  height: document.body.clientHeight || window.innerHeight
+  	}
+
+  	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+  		width = size['width'] - margin.left - margin.right,
+  		height = size['height'] - 1 - margin.top - margin.bottom;
+
+  	var x = d3.scale.linear()
+  		.domain([-width / 2, width / 2])
+  		.range([0, width]);
+
+  	var y = d3.scale.linear()
+  		.domain([-height / 2, height / 2])
+  		.range([height, 0]);
+
+  	var zoom = d3.behavior.zoom()
+  		.x(x)
+  		.y(y)
+  		.scaleExtent([0.1, 32])
+  		.on("zoom", zoom);
+
+  	var canvas = d3.select("#adjacency1x1").append("svg")
+  		.attr("width", width + margin.left + margin.right)
+  		.attr("height", height + margin.top + margin.bottom)
+  		.append("g")
+  		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  		.call(zoom);
+
+  	var content = canvas.append("g");
+  		
+  	var cellWidth = 25;
+
+  	var data = JSON.parse(document.getElementById('dataAdjacency1x1').innerHTML);
+
+  	/*var i = data['links'].length
+  	while (i--) {
+  		l = data['links'][i];
+  		if (l.relation.startsWith("taxonomy")) {
+  			data['links'].splice(i, 1);
+  		}
+  	}*/
+
+  	//sort nodes
+  	dataNodesA = []
+   	dataNodesB = []
+  	collectedNodes = {}
+  	for (i in data['links']) {
+  		l = data['links'][i];
+  		dataNodesA.push(data['nodes'][l.source]);
+   		dataNodesB.push(data['nodes'][l.target]);
+  		collectedNodes[data['nodes'][l.source].id] = [];
+  		collectedNodes[data['nodes'][l.target].id] = [];
+     		l.source = data['nodes'][l.source].id;
+     		l.target = data['nodes'][l.target].id;
+  	}
+  	dataNodesA = dataNodesA.filter(function(item, pos) {
+   		return dataNodesA.indexOf(item) == pos;
+   	});
+   	dataNodesB = dataNodesB.filter(function(item, pos) {
+   		return dataNodesB.indexOf(item) == pos;
+   	});
+  	for (i in data['nodes']) {
+  		n = data['nodes'][i];
+  		if (!(n.id in collectedNodes)) {
+  			if (data['links'].length == 0) {
+  				if (dataNodesA.length == 0) {
+  					dataNodesA.push(n)
+  				} else if (dataNodesA[0].group = n.group) {
+  					dataNodesA.push(n);
+  				} else {
+  					dataNodesB.push(n);
+  				}
+  			} else {
+  				if(dataNodesA[0].group == n.group) {
+  					dataNodesA.push(n);
+  				}
+  				if(dataNodesB[0].group == n.group) {
+  					dataNodesB.push(n);
+  				}
+  			}
+  			collectedNodes[n.id] = []
+  		}
+  	}
+  	
+  	data['nodes'] = data['nodes'].sort(function(a, b) { 
+  										return d3.ascending(a.id, b.id); 
+  								});
+  		
+  	groupNodes = { }
+  	for (i in data['nodes']) {
+  		n = data['nodes'][i];
+  		id = n.group;
+  		if (id in groupNodes) {
+  			groupNodes[id].push(n);
+  		} else {
+  			groupNodes[id] = [];
+  			groupNodes[id].push(n);
+  		}
+  	}
+  	if(Object.keys(groupNodes).length != 2) {
+  		return;
+  	}
+  						
+  	//sort links for legend
+  	data['links'] = data['links'].sort(function(a, b) { 
+  									if(a.relation.startsWith("taxonomy") && b.relation.startsWith("taxonomy")) {
+  										idA = a.relation.split(".")[1];
+  										idB = b.relation.split(".")[1];
+  										if (idA == idB) {
+  											return d3.ascending(a.relation, b.relation);
+  										}
+  										return d3.ascending(idA, idB);
+  									}
+  									return d3.ascending(a.relation, b.relation); 
+  								});
+  	for (i in data['links']) {
+  		l = data['links'][i];
+  		l.source = dataNodesA.map(function (n) {
+  										return n.id;
+  									}).indexOf(l.source)
+  		l.target = dataNodesB.map(function (n) {
+  										return n.id;
+  									}).indexOf(l.target)
+  	}
+
+  	var linksMap = { };
+  	for (i in data['links']) {
+  		var l = data['links'][i];
+  		linksMap[l.source + ";" + l.target] = l;
+  	}
+  	var cells = [];
+  	for (i in dataNodesA) {
+  		for (j in dataNodesB) {
+  			var id = i + ";" + j;
+  			cells.push({ 
+  						id: id,
+  						source: i, 
+  						target: j, 
+  						relation: id in linksMap ? linksMap[id].relation : ""
+  					});
+  		}
+  	}
+  	/*
+  	c20 = d3.scale.category20();
+  	colorIndex = 0;
+  	var colors = { 
+  			"" : "white",
+  			"equals" : c20(colorIndex++),
+  			"disjoint" : c20(colorIndex++),
+  			"includes" : c20(colorIndex++),
+  			"is_included_in" : c20(colorIndex++),
+  			"overlaps" : c20(colorIndex++)
+  	}
+  	*/
+
+  	var colors = {
+  		"" : "white",
+  		"equals" : "#7f7f7f", //dark gray
+  		"disjoint" : "#c7c7c7", //light gray
+  		"includes" : "#e6550d", //dark orange
+  		"is_included_in" : "#fd8d3c", //light orange
+  		"overlaps" : "#d62728" //red
+  	}
+
+  	//var taxonomyPairColors = ["#393b79", "#5254a3", "#637939", "#8ca252", "#8c6d31", "#bd9e39", "#843c39", "#ad494a", "#7b4173", "#a55194"];
+  	//colorIndex = 0;
+  	for (i in data['links']) {
+  		var l = data['links'][i];
+  		/*if (!(l.relation in colors)) {
+  			colors[l.relation] = taxonomyPairColors[colorIndex];
+  			colorIndex = colorIndex + 1 % 4;
+  		}*/
+  		cells.push({ 
+  					id: l.source + ";" + l.target, 
+  					source: l.source, 
+  					target: l.target, 
+  					relation: l.relation 
+  				});
+  	}
+
+  	var x = d3.scale.linear()
+  		.domain([-width / 2, width / 2])
+  		.range([0, width]);
+
+  	var y = d3.scale.linear()
+  		.domain([-height / 2, height / 2])
+  		.range([height, 0]);
+
+  	adjacencyView = content.append("g")
+  			  .attr("transform", "translate(90,90)");
+  			adjacencyView.selectAll("rect")
+  			  .data(cells)
+  			  .enter()
+  			  .append("rect")
+  			  .attr("width", cellWidth)
+  			  .attr("height", cellWidth)
+  			  .attr("x", function (d) {return d.target * cellWidth})
+  			  .attr("y", function (d) {return d.source * cellWidth})
+  			  .style("fill", function(d) { return colors[d.relation]; })
+  			  .style("stroke", "black")
+  			  .on("mouseover", mouseover)
+  			  .on("mouseout", mouseout);
+  			
+  	var matrixScaleA = d3.scale.ordinal()
+  						.domain(dataNodesA.map(function (n) {
+  											return n.id
+  										}))
+  						.rangePoints([0, dataNodesA.length * cellWidth], 1);
+  	var matrixScaleB = d3.scale.ordinal()
+  						.domain(dataNodesB.map(function (n) {
+  											return n.id
+  										}))
+  						.rangePoints([0, dataNodesB.length * cellWidth], 1);						
+  	/*tickValues = []
+  	for (i = 0; i < data['nodes'].length - 2; i++) { 
+  		tickValues.push(i * cellWidth + 0.5 * cellWidth)
+  	}*/
+  	/*for (i in data['nodes']) {
+  		console.log(i);
+  		console.log(i * cellWidth);
+  		console.log(i * cellWidth - 0.5 * cellWidth);
+  		tickValues.push(i * cellWidth - 0.5 * cellWidth)
+  		
+  	}
+  	console.log(tickValues);*/
+  	xAxis = d3.svg.axis()
+  				.scale(matrixScaleB)
+  				//.tickValues(tickValues)
+  				.orient("top")
+  				.tickSize(0); 
+  	yAxis = d3.svg.axis()
+  				.scale(matrixScaleA)
+  				//.tickValues(tickValues)
+  				.orient("left")
+  				.tickSize(0);    
+  	adjacencyView.append("g")
+  				.call(xAxis)
+  				.selectAll("text")
+  				.style("text-anchor", "end")
+  				.attr("transform", "translate(-8,-10) rotate(90)");
+  	adjacencyView.append("g")
+  				.call(yAxis)
+  				.attr("transform", "translate(-10, 0)");
+  	  
+  	function mouseover(d, i) {
+  		d3.selectAll("div#adjacency1x1 rect")
+  			/*.style("stroke", function(o) {
+  				return (o.source == d.source || o.target == d.target) ? "black" : "gray";
+  			})*/
+  			.style("stroke-width", function(o) {
+  				return (o.source == d.source || o.target == d.target) ? "3px" : "1px";
+  			});
+  		d3.selectAll("div#adjacency1x1 g#legend g text").classed("activeLegend", function(c, i) { 
+  													return c == d.relation;
+  												});
+  		d3.selectAll("div#adjacency1x1 g.tick text").classed("activeTick", function(c, i) {
+  													return dataNodesA[d.source].id == c || dataNodesB[d.target].id == c;
+  												});
+  	}
+
+  	function mouseout() {
+  		d3.selectAll("div#adjacency1x1 rect").style("stroke-width", "1px");
+  		d3.selectAll("div#adjacency1x1 legend g text").classed("activeLegend", false);
+  		d3.selectAll("div#adjacency1x1 g.tick text").classed("activeTick", false);
+  	}
+
+  	content.append("g").append("text").text("From").style("font-weight", "bold").attr("transform", "translate(5, 70)");
+  	content.append("g").append("text").text("To").style("font-weight", "bold").attr("transform", "translate(60, 30)");
+
+  	legend = []
+  	for (c in colors) {
+  		if (c != "") { 
+  			legend.push(c);
+  		}
+  	}
+  	adjacencyViewLegend = content.append("g")
+  		.attr("transform", "translate(" + (((dataNodesA.length + dataNodesB.length) * cellWidth) + 150) + ", 80)")
+  		.attr("id", "legend");
+  	legendGs = adjacencyViewLegend.selectAll("g")
+  	  .data(legend);
+  	legendG = legendGs.enter()
+  	  .append("g")
+  	legendG.append("rect")
+  	  .attr("width", cellWidth)
+  	  .attr("height", cellWidth)
+  	  .attr("x", function (d, i) {return 0; })
+  	  .attr("y", function (d, i) {return i * cellWidth})
+  	  .style("fill", function(d) { return colors[d]; })
+  	  .style("stroke", "black");
+  	legendG.append("text")
+  	  .text(function(d) { return d; })
+  	  .attr("x", function (d, i) { return 40; })
+  	  .attr("y", function (d, i) { return (i * (cellWidth)) + 18; });	
+
+  	function zoom() {
+  		x = d3.event.translate[0]
+  		y = d3.event.translate[1]
+  		content.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+  	}
+
+  	d3.select("div#adjacency1x1 button#reset").on("click", reset);
+  	d3.select("div#adjacency1x1 button#zoomin").on("click", zoomIn);
+  	d3.select("div#adjacency1x1 button#zoomout").on("click", zoomOut);
+
+
+  	var originalWidth = dataNodesB.length * cellWidth + 100;
+  	var originalHeight = dataNodesA.length * cellWidth + 100;
+  	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+  	var t = d3.transform(canvas.attr("transform")),
+  			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+  			initialY = 20, //t.translate[1],
+  			initialS = initialScale; //t.scale[0];
+
+  	function zoomIn() {
+  		var t = d3.transform(content.attr("transform")),
+  			x = t.translate[0],
+  			y = t.translate[1],
+  			s = t.scale[0];
+  		var newScale = (s + 0.1);
+  		zoom.scale(newScale)
+  		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+  	}
+
+  	function zoomOut() {
+  		var t = d3.transform(content.attr("transform")),
+  			x = t.translate[0],
+  			y = t.translate[1],
+  			s = t.scale[0];
+  		var newScale = (s - 0.1);
+  		zoom.scale(newScale)
+  		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+  	}
+
+  	function reset() {
+  		initialTranslate = [initialX, initialY];
+  		zoom.translate(initialTranslate);
+  		zoom.scale(initialS)
+  		content.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+  	}
+
+  	reset(); //removes the random jump after first click issue
+  }
+  </script>
+  <script id="adjacency">
+   createAdjacencyMatrix();
+function createAdjacencyMatrix() {
+	var size = {
+	  width: document.body.clientWidth || window.innerWidth,
+	  height: document.body.clientHeight || window.innerHeight
+	}
+
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+		width = size['width'] - margin.left - margin.right,
+		height = size['height'] - 1 - margin.top - margin.bottom;
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	var zoom = d3.behavior.zoom()
+		.x(x)
+		.y(y)
+		.scaleExtent([0.1, 32])
+		.on("zoom", zoom);
+
+	var canvas = d3.select("#adjacency").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.call(zoom);
+
+	var content = canvas.append("g");
+		
+	var cellWidth = 25;
+
+	var data = JSON.parse(document.getElementById('dataAdjacency').innerHTML);
+
+	//sort nodes
+	for (i in data['links']) {
+		l = data['links'][i];
+		l.source = data['nodes'][l.source].id
+		l.target = data['nodes'][l.target].id
+	}
+	data['nodes'] = data['nodes'].sort(function(a, b) { 
+										return d3.ascending(a.id, b.id); 
+									});
+	//sort links for legend
+	data['links'] = data['links'].sort(function(a, b) { 
+									if(a.relation.startsWith("taxonomy") && b.relation.startsWith("taxonomy")) {
+										idA = a.relation.split(".")[1];
+										idB = b.relation.split(".")[1];
+										if (idA == idB) {
+											return d3.ascending(a.relation, b.relation);
+										}
+										return d3.ascending(idA, idB);
+									}
+									return d3.ascending(a.relation, b.relation); 
+								});
+	for (i in data['links']) {
+		l = data['links'][i];
+		l.source = data['nodes'].map(function (n) {
+										return n.id;
+									}).indexOf(l.source)
+		l.target = data['nodes'].map(function (n) {
+										return n.id;
+									}).indexOf(l.target)
+	}
+
+	var linksMap = { };
+	for (i in data['links']) {
+		var l = data['links'][i];
+		linksMap[l.source + ";" + l.target] = l;
+	}
+	var cells = [];
+	for (i in data['nodes']) {
+		for (j in data['nodes']) {
+			var id = i + ";" + j;
+			cells.push({ 
+						id: id,
+						source: i, 
+						target: j, 
+						relation: id in linksMap ? linksMap[id].relation : ""
+					});
+		}
+	}
+	/*
+	c20 = d3.scale.category20();
+	colorIndex = 0;
+	var colors = { 
+			"" : "white",
+			"equals" : c20(colorIndex++),
+			"disjoint" : c20(colorIndex++),
+			"includes" : c20(colorIndex++),
+			"is_included_in" : c20(colorIndex++),
+			"overlaps" : c20(colorIndex++)
+	}
+	*/
+
+	var colors = {
+		"" : "white",
+		"equals" : "#7f7f7f", //dark gray
+		"disjoint" : "#c7c7c7", //light gray
+		"includes" : "#e6550d", //dark orange
+		"is_included_in" : "#fd8d3c", //light orange
+		"overlaps" : "#d62728" //red
+	}
+
+	var taxonomyPairColors = ["#393b79", "#5254a3", "#637939", "#8ca252", "#8c6d31", "#bd9e39", "#843c39", "#ad494a", "#7b4173", "#a55194"];
+	colorIndex = 0;
+	for (i in data['links']) {
+		var l = data['links'][i];
+		if (!(l.relation in colors)) {
+			colors[l.relation] = taxonomyPairColors[colorIndex];
+			colorIndex = colorIndex + 1 % 4;
+		}
+		cells.push({ 
+					id: l.source + ";" + l.target, 
+					source: l.source, 
+					target: l.target, 
+					relation: l.relation 
+				});
+	}
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	adjacencyView = content.append("g")
+			  .attr("transform", "translate(90,90)");
+			adjacencyView.selectAll("rect")
+			  .data(cells)
+			  .enter()
+			  .append("rect")
+			  .attr("width", cellWidth)
+			  .attr("height", cellWidth)
+			  .attr("x", function (d) {return d.target * cellWidth})
+			  .attr("y", function (d) {return d.source * cellWidth})
+			  .style("fill", function(d) { return colors[d.relation]; })
+			  .style("stroke", "black")
+			  .on("mouseover", mouseover)
+			  .on("mouseout", mouseout);
+			
+	var matrixScale = d3.scale.ordinal()
+						.domain(data['nodes'].map(function (n) {
+											return n.id
+										}))
+						.rangePoints([0, data['nodes'].length * cellWidth], 1);
+						
+	/*tickValues = []
+	for (i = 0; i < data['nodes'].length - 2; i++) { 
+		tickValues.push(i * cellWidth + 0.5 * cellWidth)
+	}*/
+	/*for (i in data['nodes']) {
+		console.log(i);
+		console.log(i * cellWidth);
+		console.log(i * cellWidth - 0.5 * cellWidth);
+		tickValues.push(i * cellWidth - 0.5 * cellWidth)
+		
+	}
+	console.log(tickValues);*/
+	xAxis = d3.svg.axis()
+				.scale(matrixScale)
+				//.tickValues(tickValues)
+				.orient("top")
+				.tickSize(0); 
+	yAxis = d3.svg.axis()
+				.scale(matrixScale)
+				//.tickValues(tickValues)
+				.orient("left")
+				.tickSize(0);    
+	adjacencyView.append("g")
+				.call(xAxis)
+				.selectAll("text")
+				.style("text-anchor", "end")
+				.attr("transform", "translate(-8,-10) rotate(90)");
+	adjacencyView.append("g")
+				.call(yAxis)
+				.attr("transform", "translate(-10, -10)");
+	  
+	function mouseover(d, i) {
+		d3.selectAll("div#adjacency rect")
+			/*.style("stroke", function(o) {
+				return (o.source == d.source || o.target == d.target) ? "black" : "gray";
+			})*/
+			.style("stroke-width", function(o) {
+				return (o.source == d.source || o.target == d.target) ? "3px" : "1px";
+			});
+		d3.selectAll("div#adjacency g#legend g text").classed("activeLegend", function(c, i) { 
+													return c == d.relation;
+												});
+		d3.selectAll("div#adjacency g.tick text").classed("activeTick", function(c, i) {
+													return data['nodes'][d.source].id == c || data['nodes'][d.target].id == c;
+												});
+	}
+
+	function mouseout() {
+		d3.selectAll("div#adjacency rect").style("stroke-width", "1px");
+		d3.selectAll("div#adjacency legend g text").classed("activeLegend", false);
+		d3.selectAll("div#adjacency g.tick text").classed("activeTick", false);
+	}
+
+	content.append("g").append("text").text("From").style("font-weight", "bold").attr("transform", "translate(5, 70)");
+	content.append("g").append("text").text("To").style("font-weight", "bold").attr("transform", "translate(60, 30)");
+
+	legend = []
+	for (c in colors) {
+		if (c != "") { 
+			legend.push(c);
+		}
+	}
+	adjacencyViewLegend = content.append("g")
+		.attr("transform", "translate(" + ((data['nodes'].length * cellWidth) + 150) + ", 80)")
+		.attr("id", "legend");
+	legendGs = adjacencyViewLegend.selectAll("g")
+	  .data(legend);
+	legendG = legendGs.enter()
+	  .append("g")
+	legendG.append("rect")
+	  .attr("width", cellWidth)
+	  .attr("height", cellWidth)
+	  .attr("x", function (d, i) {return 0; })
+	  .attr("y", function (d, i) {return i * cellWidth})
+	  .style("fill", function(d) { return colors[d]; })
+	  .style("stroke", "black");
+	legendG.append("text")
+	  .text(function(d) { return d; })
+	  .attr("x", function (d, i) { return 40; })
+	  .attr("y", function (d, i) { return (i * (cellWidth)) + 18; });	
+
+	function zoom() {
+		x = d3.event.translate[0]
+		y = d3.event.translate[1]
+		content.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+	}
+
+	d3.select("div#adjacency button#reset").on("click", reset);
+	d3.select("div#adjacency button#zoomin").on("click", zoomIn);
+	d3.select("div#adjacency button#zoomout").on("click", zoomOut);
+
+
+	var originalWidth = data['nodes'].length * cellWidth + 100;
+	var originalHeight = data['nodes'].length * cellWidth + 100;
+	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+	var t = d3.transform(canvas.attr("transform")),
+			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+			initialY = 20, //t.translate[1],
+			initialS = initialScale; //t.scale[0];
+
+	function zoomIn() {
+		var t = d3.transform(content.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s + 0.1);
+		zoom.scale(newScale)
+		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function zoomOut() {
+		var t = d3.transform(content.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s - 0.1);
+		zoom.scale(newScale)
+		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function reset() {
+		initialTranslate = [initialX, initialY];
+		zoom.translate(initialTranslate);
+		zoom.scale(initialS)
+		content.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+	}
+
+	reset(); //removes the random jump after first click issue
+}
+  </script>
+ </body>
+</html>

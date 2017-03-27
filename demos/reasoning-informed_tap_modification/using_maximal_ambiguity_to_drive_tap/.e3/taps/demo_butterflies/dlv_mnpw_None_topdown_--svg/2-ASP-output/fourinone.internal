@@ -1,0 +1,8 @@
+nodes = [0, 1, 2, 3, 4, 5, 6, 7]
+edges = [['000', '001'], ['000', '010'], ['000', '100'], ['001', '011'], ['001', '101'], ['010', '011'], ['010', '110'], ['011', '111'], ['100', '101'], ['100', '110'], ['101', '111'], ['110', '111']]
+power = 3
+misBin = []
+mcsBin = ['111']
+musBin = ['111']
+maaBin = ['011', '101', '110']
+artDictbin = {'1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis': 2, '1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles': 1, '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites': 4}

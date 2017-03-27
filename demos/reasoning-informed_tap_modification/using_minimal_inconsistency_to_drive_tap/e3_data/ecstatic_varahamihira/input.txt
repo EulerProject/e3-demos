@@ -1,0 +1,11 @@
+taxonomy 2015 Prum
+(Aves Gall_Neoa_Clade Palaeognathae)
+(Gall_Neoa_Clade Galloanserae Neoaves)
+
+taxonomy 2014 Jarvis
+(Aves Neognathae Paleognathae)
+(Paleognathae Struthioniformes Tinamiformes)
+
+articulation
+[2015.Gall_Neoa_Clade equals 2014.Neognathae]
+[2015.Neoaves equals 2014.Tinamiformes]

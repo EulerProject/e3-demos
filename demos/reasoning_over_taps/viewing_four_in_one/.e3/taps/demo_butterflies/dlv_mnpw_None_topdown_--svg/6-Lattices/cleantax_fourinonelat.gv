@@ -1,0 +1,64 @@
+digraph {
+
+rankdir = BT
+
+None [shape=box style="filled" fillcolor="#FFFFFF"];
+"0" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1" [shape=diamond style="filled" fillcolor="#00FFCC"];
+"2" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,2" [shape=diamond style="filled" fillcolor="#00FFCC"];
+"1,2" [shape=diamond style="filled" fillcolor="#00FFCC"];
+"0,1,2" [shape=octagon style="filled" fillcolor="#00FF00"];
+None -> "0" [arrowhead=none]
+None -> "1" [arrowhead=none]
+None -> "2" [arrowhead=none]
+"0" -> "0,1" [arrowhead=none]
+"0" -> "0,2" [arrowhead=none]
+"1" -> "0,1" [arrowhead=none]
+"1" -> "1,2" [arrowhead=none]
+"0,1" -> "0,1,2" [arrowhead=none]
+"2" -> "0,2" [arrowhead=none]
+"2" -> "1,2" [arrowhead=none]
+"0,2" -> "0,1,2" [arrowhead=none]
+"1,2" -> "0,1,2" [arrowhead=none]
+node[shape=box] 
+{rank=top Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD>0</TD> 
+ <TD>1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles</TD> 
+ </TR> 
+<TR> 
+ <TD>1</TD> 
+ <TD>1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis</TD> 
+ </TR> 
+<TR> 
+ <TD>2</TD> 
+ <TD>1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+Legend -> "None" [style=invis]
+node[shape=box] 
+{rank=top Intro [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD> Minimal Inconsistent Subsets (MIS) </TD> 
+ <TD> Red box </TD> 
+ </TR> 
+<TR> 
+ <TD> Maximal Consistent Subsets </TD> 
+ <TD> Green box </TD> 
+ </TR> 
+<TR> 
+ <TD> Minimal Unique Subsets </TD> 
+ <TD> Green octagon</TD> 
+ </TR> 
+<TR> 
+ <TD> Maximal Ambiguous Subsets </TD> 
+ <TD> Cyan diamond </TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

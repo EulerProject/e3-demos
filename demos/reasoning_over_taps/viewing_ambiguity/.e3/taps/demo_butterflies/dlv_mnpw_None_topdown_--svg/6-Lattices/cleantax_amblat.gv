@@ -1,0 +1,50 @@
+digraph{
+rankdir=BT
+node[fontname="Helvetica"]
+
+node[shape=octagon color="#9f1684" fillcolor="#df77cb" style=filled]
+"1,2,3" [label="1,2,3\n(1)"]
+node[shape=octagon color="#9f1684" fillcolor="#df77cb" style=solid penwidth=0.4]
+node[shape=box color="#134d9c" fillcolor="#68b5e3" style="rounded,filled"]
+"2,3" [label="2,3\n(11)"]
+"1,3" [label="1,3\n(17)"]
+"1,2" [label="1,2\n(5)"]
+node[shape=box color="#134d9c" style=rounded penwidth=0.4]
+"3" [label="3"]
+"None"
+"1" [label="1\n(161)"]
+"2" [label="2"]
+
+edge[style=dotted penwidth=0.4]
+
+"None" -> "1" [dir=back color="#134d9c"]
+"None" -> "2" [dir=back color="#134d9c"]
+"None" -> "3" [dir=back color="#134d9c"]
+"1" -> "1,2" [dir=back color="#134d9c"]
+"1" -> "1,3" [dir=back color="#134d9c"]
+"2" -> "1,2" [dir=back color="#134d9c"]
+"2" -> "2,3" [dir=back color="#134d9c"]
+"1,2" -> "1,2,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3" -> "1,3" [dir=back color="#134d9c"]
+"3" -> "2,3" [dir=back color="#134d9c"]
+"1,3" -> "1,2,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,3" -> "1,2,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+node[shape=plaintext fontsize=12 color=black] 
+{rank=top Legend [label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2"> 
+<TR> 
+ <TD>1</TD> 
+ <TD>1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles</TD> 
+ </TR> 
+<TR> 
+ <TD>2</TD> 
+ <TD>1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis</TD> 
+ </TR> 
+<TR> 
+ <TD>3</TD> 
+ <TD>1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+Legend -> "None" [style=invis]
+}

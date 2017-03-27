@@ -1,0 +1,22 @@
+##### Executing command:
+
+/usr/local/bin/euler2 align /home/jovyan/work/0_workspace/.e3/taps/determined_cori/cleantax -o /home/jovyan/work/0_workspace/.e3/taps/determined_cori/dlv_mnpw_None_topdown_--svg -r dlv -e mnpw --fourinone 
+sh: 1: softwareversions: not found
+
+##### Running User, Host and Date:
+User:	root
+Host:	c70a0fb599be
+Date:	2017-03-25-22:30:25
+
+
+##### Euler Outputs:
+******* You are running example cleantax *******
+************************************
+# 1 Min articulation subset that makes unique PW : [ 1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles , 1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis , 1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites ]
+************************************
+You have ...
+
+MIS (red box): 
+MCS (green box): ['1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis', '1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles'] 
+MUS: (green octagon) ['1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis', '1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites'] 
+MAA: (cyan diamond) ['1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis', '1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles'] ['1997.Amauris_damocles equals 1995.Amauris_damocles_subsp_damocles', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles'] ['1997.Amauris_hyalites_subsp_makuyensis equals 1995.Amauris_damocles_subsp_makuyensis', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles_subsp_hyalites', '1997.Amauris_hyalites_subsp_hyalites is_included_in 1995.Amauris_damocles']

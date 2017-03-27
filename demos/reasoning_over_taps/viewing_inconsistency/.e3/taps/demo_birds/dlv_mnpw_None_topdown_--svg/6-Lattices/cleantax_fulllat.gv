@@ -1,0 +1,150 @@
+digraph{
+rankdir=BT
+node[fontname="Helvetica"]
+
+node[shape=octagon color="#FF0000" fillcolor="#FFB0B0" style=filled]
+"2,3,5"
+"1,3"
+"1,2"
+node[shape=octagon color="#FF0000" fillcolor="#FFB0B0" style=solid penwidth=0.4]
+"1,3,4"
+"1,2,4"
+"2,3,4,5"
+"1,2,3,4,5"
+"1,3,4,5"
+"1,3,5"
+"1,2,3,5"
+"1,2,4,5"
+"1,2,5"
+"1,2,3"
+"1,2,3,4"
+node[shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"]
+"2,4,5"
+"1,4,5"
+"2,3,4"
+"3,4,5"
+node[shape=box color="#006400" style=rounded penwidth=0.4]
+"3,5"
+"4"
+"1"
+"2,3"
+"1,5"
+"2,5"
+"None"
+"4,5"
+"5"
+"3,4"
+"2"
+"2,4"
+"3"
+"1,4"
+
+edge[style=dotted penwidth=0.4]
+
+"None" -> "1" [dir=back color="#006400"]
+"None" -> "2" [dir=back color="#006400"]
+"None" -> "3" [dir=back color="#006400"]
+"None" -> "4" [dir=back color="#006400"]
+"None" -> "5" [dir=back color="#006400"]
+"1" -> "1,2" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1" -> "1,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1" -> "1,4" [dir=back color="#006400"]
+"1" -> "1,5" [dir=back color="#006400"]
+"2" -> "1,2" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2" -> "2,3" [dir=back color="#006400"]
+"2" -> "2,4" [dir=back color="#006400"]
+"2" -> "2,5" [dir=back color="#006400"]
+"1,2" -> "1,2,3" [color="#CC0000"]
+"1,2" -> "1,2,4" [color="#CC0000"]
+"1,2" -> "1,2,5" [color="#CC0000"]
+"3" -> "1,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3" -> "2,3" [dir=back color="#006400"]
+"3" -> "3,4" [dir=back color="#006400"]
+"3" -> "3,5" [dir=back color="#006400"]
+"1,3" -> "1,2,3" [color="#CC0000"]
+"1,3" -> "1,3,4" [color="#CC0000"]
+"1,3" -> "1,3,5" [color="#CC0000"]
+"2,3" -> "1,2,3" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,3" -> "2,3,4" [dir=back color="#006400"]
+"2,3" -> "2,3,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,2,3" -> "1,2,3,4" [color="#CC0000"]
+"1,2,3" -> "1,2,3,5" [color="#CC0000"]
+"4" -> "1,4" [dir=back color="#006400"]
+"4" -> "2,4" [dir=back color="#006400"]
+"4" -> "3,4" [dir=back color="#006400"]
+"4" -> "4,5" [dir=back color="#006400"]
+"1,4" -> "1,2,4" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,4" -> "1,3,4" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,4" -> "1,4,5" [dir=back color="#006400"]
+"2,4" -> "1,2,4" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,4" -> "2,3,4" [dir=back color="#006400"]
+"2,4" -> "2,4,5" [dir=back color="#006400"]
+"1,2,4" -> "1,2,3,4" [color="#CC0000"]
+"1,2,4" -> "1,2,4,5" [color="#CC0000"]
+"3,4" -> "1,3,4" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3,4" -> "2,3,4" [dir=back color="#006400"]
+"3,4" -> "3,4,5" [dir=back color="#006400"]
+"1,3,4" -> "1,2,3,4" [color="#CC0000"]
+"1,3,4" -> "1,3,4,5" [color="#CC0000"]
+"2,3,4" -> "1,2,3,4" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,3,4" -> "2,3,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,2,3,4" -> "1,2,3,4,5" [color="#CC0000"]
+"5" -> "1,5" [dir=back color="#006400"]
+"5" -> "2,5" [dir=back color="#006400"]
+"5" -> "3,5" [dir=back color="#006400"]
+"5" -> "4,5" [dir=back color="#006400"]
+"1,5" -> "1,2,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,5" -> "1,3,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,5" -> "1,4,5" [dir=back color="#006400"]
+"2,5" -> "1,2,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,5" -> "2,3,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,5" -> "2,4,5" [dir=back color="#006400"]
+"1,2,5" -> "1,2,3,5" [color="#CC0000"]
+"1,2,5" -> "1,2,4,5" [color="#CC0000"]
+"3,5" -> "1,3,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3,5" -> "2,3,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3,5" -> "3,4,5" [dir=back color="#006400"]
+"1,3,5" -> "1,2,3,5" [color="#CC0000"]
+"1,3,5" -> "1,3,4,5" [color="#CC0000"]
+"2,3,5" -> "1,2,3,5" [color="#CC0000"]
+"2,3,5" -> "2,3,4,5" [color="#CC0000"]
+"1,2,3,5" -> "1,2,3,4,5" [color="#CC0000"]
+"4,5" -> "1,4,5" [dir=back color="#006400"]
+"4,5" -> "2,4,5" [dir=back color="#006400"]
+"4,5" -> "3,4,5" [dir=back color="#006400"]
+"1,4,5" -> "1,2,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,4,5" -> "1,3,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,4,5" -> "1,2,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"2,4,5" -> "2,3,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,2,4,5" -> "1,2,3,4,5" [color="#CC0000"]
+"3,4,5" -> "1,3,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"3,4,5" -> "2,3,4,5" [arrowhead=none color="#0000FF" penwidth=2 style=solid]
+"1,3,4,5" -> "1,2,3,4,5" [color="#CC0000"]
+"2,3,4,5" -> "1,2,3,4,5" [color="#CC0000"]
+node[shape=plaintext fontsize=12 color=black] 
+{rank=top Legend [label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2"> 
+<TR> 
+ <TD>1</TD> 
+ <TD>2015.Gall_Neoa_Clade equals 2014.Neognathae</TD> 
+ </TR> 
+<TR> 
+ <TD>2</TD> 
+ <TD>2015.Galloanserae equals 2014.Struthioniformes</TD> 
+ </TR> 
+<TR> 
+ <TD>3</TD> 
+ <TD>2015.Neoaves equals 2014.Tinamiformes</TD> 
+ </TR> 
+<TR> 
+ <TD>4</TD> 
+ <TD>2015.Aves is_included_in 2014.Aves</TD> 
+ </TR> 
+<TR> 
+ <TD>5</TD> 
+ <TD>2015.Palaeognathae is_included_in 2014.Paleognathae</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+Legend -> "None" [style=invis]
+}

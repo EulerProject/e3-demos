@@ -1,0 +1,28 @@
+******* You are running example cleantax *******
+************************************
+# 1 Min inconsistent subset : [ 2015.Neoaves equals 2014.Tinamiformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 2 Min inconsistent subset : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 3 Min inconsistent subset : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Palaeognathae is_included_in 2014.Paleognathae , 2015.Neoaves equals 2014.Tinamiformes ]
+************************************
+************************************
+# 4 Min articulation subset that makes unique PW : [ 2015.Neoaves equals 2014.Tinamiformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 5 Min articulation subset that makes unique PW : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Gall_Neoa_Clade equals 2014.Neognathae ]
+************************************
+************************************
+# 6 Min articulation subset that makes unique PW : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Neoaves equals 2014.Tinamiformes , 2015.Aves is_included_in 2014.Aves ]
+************************************
+************************************
+# 7 Min articulation subset that makes unique PW : [ 2015.Galloanserae equals 2014.Struthioniformes , 2015.Palaeognathae is_included_in 2014.Paleognathae , 2015.Neoaves equals 2014.Tinamiformes ]
+************************************
+You have ...
+
+MIS (red box): ['2015.Gall_Neoa_Clade equals 2014.Neognathae', '2015.Galloanserae equals 2014.Struthioniformes'] ['2015.Palaeognathae is_included_in 2014.Paleognathae', '2015.Neoaves equals 2014.Tinamiformes', '2015.Galloanserae equals 2014.Struthioniformes'] ['2015.Gall_Neoa_Clade equals 2014.Neognathae', '2015.Neoaves equals 2014.Tinamiformes'] 
+MCS (green box): ['2015.Aves is_included_in 2014.Aves', '2015.Neoaves equals 2014.Tinamiformes', '2015.Galloanserae equals 2014.Struthioniformes'] ['2015.Aves is_included_in 2014.Aves', '2015.Palaeognathae is_included_in 2014.Paleognathae', '2015.Gall_Neoa_Clade equals 2014.Neognathae'] ['2015.Aves is_included_in 2014.Aves', '2015.Palaeognathae is_included_in 2014.Paleognathae', '2015.Galloanserae equals 2014.Struthioniformes'] ['2015.Aves is_included_in 2014.Aves', '2015.Palaeognathae is_included_in 2014.Paleognathae', '2015.Neoaves equals 2014.Tinamiformes'] 
+MUS: (green octagon) ['2015.Aves is_included_in 2014.Aves', '2015.Neoaves equals 2014.Tinamiformes', '2015.Galloanserae equals 2014.Struthioniformes'] 
+MAA: (cyan diamond)
